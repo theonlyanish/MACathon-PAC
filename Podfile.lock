@@ -1,0 +1,24 @@
+PODS:
+  - Alertift (4.2.0)
+  - Haptica (3.0.3)
+  - Pastel (0.6.0)
+
+DEPENDENCIES:
+  - Alertift (~> 4.2)
+  - Haptica
+  - Pastel
+
+SPEC REPOS:
+  trunk:
+    - Alertift
+    - Haptica
+    - Pastel
+
+SPEC CHECKSUMS:
+  Alertift: 17b37be915cd28edeceabd438e4134d041ea825c
+  Haptica: 23497230b2d7476621f7860263ae0667279a0a89
+  Pastel: 814f081efbe2859c37e65ee44f396e6e5be88619
+
+PODFILE CHECKSUM: 36bef08538e87dc810c55365d872a7b723f3191b
+
+COCOAPODS: 1.12.1
