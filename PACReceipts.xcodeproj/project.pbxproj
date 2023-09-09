@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		840D54452AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */; };
+		840D54472AACFB6C00D4DF3E /* ReceiptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */; };
 		842E95BD2AAC865A00A1C837 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95BC2AAC865A00A1C837 /* CategoryCell.swift */; };
 		842E95BF2AAC96DC00A1C837 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95BE2AAC96DC00A1C837 /* MonthCell.swift */; };
 		842E95C12AACCD4900A1C837 /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95C02AACCD4900A1C837 /* TextRecognition.swift */; };
@@ -51,6 +52,7 @@
 		10E1BDABCB05F1F3E3FF0880 /* Pods-PACReceipts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACReceipts.debug.xcconfig"; path = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.debug.xcconfig"; sourceTree = "<group>"; };
 		3122A5D7F55D71FCCE001E2F /* Pods_PACReceipts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PACReceipts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadSuccessViewController.swift; sourceTree = "<group>"; };
+		840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsViewController.swift; sourceTree = "<group>"; };
 		842E95BC2AAC865A00A1C837 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		842E95BE2AAC96DC00A1C837 /* MonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
 		842E95C02AACCD4900A1C837 /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecognition.swift; path = PACReceipts/Views/Cell/TextRecognition.swift; sourceTree = SOURCE_ROOT; };
@@ -145,6 +147,7 @@
 				847D03FA2AAC3436004AC0FC /* SceneDelegate.swift */,
 				847D03FC2AAC3436004AC0FC /* MainViewController.swift */,
 				840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */,
+				840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */,
 				847D03FE2AAC3436004AC0FC /* Main.storyboard */,
 				847D04032AAC3439004AC0FC /* LaunchScreen.storyboard */,
 				847D04012AAC3439004AC0FC /* Assets.xcassets */,
@@ -409,6 +412,7 @@
 				840D54452AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift in Sources */,
 				F879B85A2AAC692A00992A57 /* StartupScreenController.swift in Sources */,
 				F879B8562AAC5FC600992A57 /* OnboardingViewController.swift in Sources */,
+				840D54472AACFB6C00D4DF3E /* ReceiptsViewController.swift in Sources */,
 				842E95C32AACCF2000A1C837 /* MetaDataExtractor.swift in Sources */,
 				842E95BF2AAC96DC00A1C837 /* MonthCell.swift in Sources */,
 				842E95C12AACCD4900A1C837 /* TextRecognition.swift in Sources */,
