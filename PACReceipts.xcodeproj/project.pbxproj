@@ -16,6 +16,7 @@
 		847D04102AAC3439004AC0FC /* PACReceiptsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D040F2AAC3439004AC0FC /* PACReceiptsTests.swift */; };
 		847D041A2AAC3439004AC0FC /* PACReceiptsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D04192AAC3439004AC0FC /* PACReceiptsUITests.swift */; };
 		847D041C2AAC3439004AC0FC /* PACReceiptsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D041B2AAC3439004AC0FC /* PACReceiptsUITestsLaunchTests.swift */; };
+		F879B8562AAC5FC600992A57 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879B8552AAC5FC600992A57 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		847D04152AAC3439004AC0FC /* PACReceiptsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PACReceiptsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D04192AAC3439004AC0FC /* PACReceiptsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PACReceiptsUITests.swift; sourceTree = "<group>"; };
 		847D041B2AAC3439004AC0FC /* PACReceiptsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PACReceiptsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F879B8552AAC5FC600992A57 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		847D03F72AAC3436004AC0FC /* PACReceipts */ = {
 			isa = PBXGroup;
 			children = (
+				F879B8542AAC5FA100992A57 /* Views */,
 				847D04292AAC3686004AC0FC /* Service */,
 				847D04282AAC3657004AC0FC /* Models */,
 				847D03F82AAC3436004AC0FC /* AppDelegate.swift */,
@@ -141,6 +144,14 @@
 			children = (
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		F879B8542AAC5FA100992A57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F879B8552AAC5FC600992A57 /* OnboardingViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +288,7 @@
 				847D03FD2AAC3436004AC0FC /* MainViewController.swift in Sources */,
 				847D03F92AAC3436004AC0FC /* AppDelegate.swift in Sources */,
 				847D03FB2AAC3436004AC0FC /* SceneDelegate.swift in Sources */,
+				F879B8562AAC5FC600992A57 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
