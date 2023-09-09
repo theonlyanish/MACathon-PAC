@@ -25,7 +25,7 @@ class OnboardingViewController: UIViewController {
 
     let passageLabel: UILabel = {
         let label = UILabel()
-        label.text = "This is a passage underneath the title. Adjust the text as needed."
+        label.text = "Welcome to Receipt Rover, an app where you can automate the task of receipt tracking with the power of AI to save time and efforts that go behind your tax filings."
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0 // Allows the label to wrap text across multiple lines
@@ -36,14 +36,21 @@ class OnboardingViewController: UIViewController {
 
     let actionButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Tap Me", for: .normal)
-        button.tintColor = .white
-        button.layer.borderColor = UIColor.white.cgColor
-        button.layer.borderWidth = 1
-        button.layer.cornerRadius = 8
+        button.setTitle("Get Started", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        // Teal color (RGB: 0, 128, 128)
+        button.backgroundColor = UIColor(red: 12/255, green: 123/255, blue: 179/255, alpha: 1.0)
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 10
+        button.layer.shadowColor = UIColor(white: 0.0, alpha: 0.25).cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 2)
+        button.layer.shadowOpacity = 1.0
+        button.layer.shadowRadius = 5.0
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
         return button
     }()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,8 +89,17 @@ class OnboardingViewController: UIViewController {
             passageLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
             
             actionButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            actionButton.topAnchor.constraint(equalTo: passageLabel.bottomAnchor, constant: 20),
-            actionButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5)
+                   actionButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            actionButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75),
+
+                   actionButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+    @objc func actionButtonTapped() {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "InpVC") as! NameViewController
+    
+    controller.modalPresentationStyle = .fullScreen
+    present(controller, animated: true, completion: nil)
+        
     }
 }
