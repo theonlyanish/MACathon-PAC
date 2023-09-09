@@ -15,9 +15,27 @@ class StartupScreenController: UIViewController{
     // Outlet for label
     @IBOutlet weak var label: UILabel!
     var text: String?
+    let actionButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Next", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        // Teal color (RGB: 0, 128, 128)
+        button.backgroundColor = UIColor(red: 12/255, green: 123/255, blue: 179/255, alpha: 1.0)
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 10
+        button.layer.shadowColor = UIColor(white: 0.0, alpha: 0.25).cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 2)
+        button.layer.shadowOpacity = 1.0
+        button.layer.shadowRadius = 5.0
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         if text != nil {
             label.text = text
         }
@@ -46,6 +64,29 @@ class StartupScreenController: UIViewController{
         //(UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     }
     
+    func setupUI() {
+        // Add the UI elements to the view
+        
+        view.addSubview(actionButton)
+        
+        // Set up constraints
+        NSLayoutConstraint.activate([
+            
+            actionButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                   actionButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            actionButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75),
+
+                   actionButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    @objc func actionButtonTapped() {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "JobVC") as! JobViewController
+    
+    controller.modalPresentationStyle = .fullScreen
+    present(controller, animated: true, completion: nil)
+        
+    }
 
             
 }

@@ -14,9 +14,33 @@ class NameViewController: UIViewController, UITextFieldDelegate{
     //Outlet for text field
     @IBOutlet weak var textField: UITextField!
     
+    let actionButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Next", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        // Teal color (RGB: 0, 128, 128)
+        button.backgroundColor = UIColor(red: 12/255, green: 123/255, blue: 179/255, alpha: 1.0)
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 10
+        button.layer.shadowColor = UIColor(white: 0.0, alpha: 0.25).cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 2)
+        button.layer.shadowOpacity = 1.0
+        button.layer.shadowRadius = 5.0
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        return button
+    }()
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //textField.delegate = self
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        setupUI()
+        textField.delegate = self
         
         // Declaring pastel
         let pastelView = PastelView(frame: view.bounds)
@@ -50,7 +74,7 @@ class NameViewController: UIViewController, UITextFieldDelegate{
     }
     
     // Function to send data to next view controller and saving it in user default
-    @IBAction func buttonPressed(_ sender: Any){
+    @objc func buttonPressed(_ sender: Any){
         let controller = storyboard?.instantiateViewController(withIdentifier: "NameVC") as! StartupScreenController
             controller.text = textField.text
             let uname = textField.text
@@ -65,4 +89,26 @@ class NameViewController: UIViewController, UITextFieldDelegate{
         textField.resignFirstResponder()
         return true;
     }
-}
+    
+       // MARK: Functions to handle keyboard dismissal
+       @objc func dismissKeyboard() {
+           view.endEditing(true)
+       }
+    
+    func setupUI() {
+        // Add the UI elements to the view
+        
+        view.addSubview(actionButton)
+        
+        // Set up constraints
+        NSLayoutConstraint.activate([
+            
+            actionButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                   actionButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            actionButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75),
+
+                   actionButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+   }
+
