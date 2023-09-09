@@ -1,6 +1,7 @@
 import UIKit
+import AVFoundation
 import VisionKit
-import Vision
+
 
 class MainViewController: UIViewController {
     enum SectionLayoutKind: Int, CaseIterable {
@@ -19,8 +20,13 @@ class MainViewController: UIViewController {
     var categories: [Category]?
     private var dataSource: UICollectionViewDiffableDataSource<SectionLayoutKind, Int>! = nil
     private var collectionView: UICollectionView! = nil
-    var textRecognitionRequest = VNRecognizeTextRequest(completionHandler: nil)
-    let textRecognitionWorkQueue = DispatchQueue(label: "TextRecognitionQueue", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
+    let activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.color = .gray
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        return indicator
+    }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -148,16 +154,35 @@ extension MainViewController: VNDocumentCameraViewControllerDelegate {
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         // Handle the scanned document here
         if scan.pageCount > 1 {
-            // Inform user they can only scan a single page
             let alert = UIAlertController(title: "Error", message: "Please scan only one page at a time.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             controller.present(alert, animated: true, completion: nil)
         } else {
             // Handle the single scanned image
             let scannedImage = scan.imageOfPage(at: 0)
-            detectText(in: scannedImage)
-            // Do something with scannedImage
-            controller.dismiss(animated: true, completion: nil)
+            activityIndicator.startAnimating()
+            view.isUserInteractionEnabled = false
+            detectText(in: scannedImage)  { [self] scannedText in
+                if let text = scannedText {
+                    DispatchQueue.main.async {
+                        controller.dismiss(animated: true, completion: nil)
+                        let successVC = ImageUploadSuccessViewController(ocrText: text, image: scannedImage)
+                        let navController = UINavigationController(rootViewController: successVC)
+                        
+                        // Hide the navigation bar and tab bar
+                        navController.modalPresentationStyle = .fullScreen
+                        self.present(navController, animated: true, completion: nil)
+                    }
+                } else {
+                    let alert = UIAlertController(title: "Error", message: "Cannot detect text", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in
+                        controller.dismiss(animated: true, completion: nil)
+                    }))
+                    controller.present(alert, animated: true, completion: nil)
+                }
+                
+            }
+            
         }
     }
     
@@ -172,63 +197,6 @@ extension MainViewController: VNDocumentCameraViewControllerDelegate {
     }
 }
 
-
-import AVFoundation
-
-func detectText(in image: UIImage) {
-    guard let image = image.cgImage else {
-        print("Invalid image")
-        return
-    }
-    
-    
-    let request = VNRecognizeTextRequest { (request, error) in
-        if let error = error {
-            print("Error detecting text: \(error)")
-        } else {
-            handleDetectionResults(results: request.results)
-        }
-    }
-    
-    request.recognitionLanguages = ["en_US"]
-    request.recognitionLevel = .accurate
-    
-    performDetection(request: request, image: image)
-}
-
-func performDetection(request: VNRecognizeTextRequest, image: CGImage) {
-    let requests = [request]
-    
-    let handler = VNImageRequestHandler(cgImage: image, orientation: .up, options: [:])
-    
-    DispatchQueue.global(qos: .userInitiated).async {
-        do {
-            try handler.perform(requests)
-        } catch let error {
-            print("Error: \(error)")
-        }
-    }
-}
-
-
-func handleDetectionResults(results: [Any]?) {
-    var textOCRResults: [String] = []
-    guard let results = results, results.count > 0 else {
-        print("No text found")
-        return
-    }
-    
-    for result in results {
-        if let observation = result as? VNRecognizedTextObservation {
-            for text in observation.topCandidates(1) {
-                print(text.string)
-                textOCRResults.append(text.string)
-            }
-        }
-        
-    }
-    
-}
 
 func requestCameraPermission(completion: @escaping (Bool) -> Void) {
     let status = AVCaptureDevice.authorizationStatus(for: .video)

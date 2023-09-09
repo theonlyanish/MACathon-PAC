@@ -7,115 +7,188 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F3D71986551CD8FB502F9364912232D /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B4D73B7A81E8E40B19F8634692AF09 /* Pattern.swift */; };
-		0FA97BDD0DD156174A6AA156068A16FB /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D7EBF046FBB10D2B58A994E96D0748 /* Haptic.swift */; };
-		15CD915BCF89E46681099D1E2721C435 /* InnerAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A2394ED6D4E8E26A3280F917BB007A /* InnerAlertController.swift */; };
-		1DE2D714506964B688948D2CAE10C62B /* Alertift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A26F30256855B04C5DF5D66D35F32260 /* Alertift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CE6B63E1925C6F9D659AD6A491CD30D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE86E10F64AB76DD56A02F19C8C80F /* Extensions.swift */; };
-		341CA286FB94ACD84B287E9C230EEE14 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463DED0CF7FAEF3AB7D5087668AB5405 /* PastelView.swift */; };
-		43A7F71351E825C0C089BFEE5B99405A /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA6E63F979715804F17A868BCB00D3 /* Associated.swift */; };
-		4B278B10F0B7DAAF6C64459B1E259410 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FF81CDB8D5D596B0F6829B62E0354B /* Action.swift */; };
-		5E3D1FE2B71A8A95050F50DA05CAC9E6 /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A280CD5843286561415C7FDF22D13F /* Pastel-dummy.m */; };
+		08D3D76690C5C26821D14D1A5611C892 /* encoder.json in Resources */ = {isa = PBXBuildFile; fileRef = A56C4B12E2BD2E2D334D197AA931E42E /* encoder.json */; };
+		0F3D71986551CD8FB502F9364912232D /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD679A14856411F9113403D7EFA15012 /* Pattern.swift */; };
+		0FA97BDD0DD156174A6AA156068A16FB /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262AB486161413448AE473F7353D2F1 /* Haptic.swift */; };
+		15CD915BCF89E46681099D1E2721C435 /* InnerAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A0C9DAC4622FE2162EDB8E22EA910 /* InnerAlertController.swift */; };
+		1DE2D714506964B688948D2CAE10C62B /* Alertift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE003F392D877A84A9602740C59101A /* Alertift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FE12E7262C0B00313A4EE943C3E8E06 /* ChatGPTSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABBFBF19983D3EFA445AA00D225116 /* ChatGPTSwift-dummy.m */; };
+		22A7E4BF9C7EEE0F5617E73CA6954B81 /* GPTEncoderResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F41D354EF9481D49F68DE860256DB /* GPTEncoderResources.swift */; };
+		2CE6B63E1925C6F9D659AD6A491CD30D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01CCC361803FF5F41D1B64A69C56E8 /* Extensions.swift */; };
+		32729EA164A563CF0054F683BD9B72FD /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5246C9421B72F8952404D0573CBC2C5B /* String+Error.swift */; };
+		341CA286FB94ACD84B287E9C230EEE14 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38237884D0886DA8D22B1DD9764C45 /* PastelView.swift */; };
+		34A089296347AC8BE3EA3ECA0A67B475 /* Pods-PACReceipts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFBFD14D191FA805D9F1A00E6AB739 /* Pods-PACReceipts-dummy.m */; };
+		43A7F71351E825C0C089BFEE5B99405A /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E80AA4AA05043618861F46CB589D3D /* Associated.swift */; };
+		4B278B10F0B7DAAF6C64459B1E259410 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB73A07A118A7267F426DC3B7CBEB9D /* Action.swift */; };
+		5E3D1FE2B71A8A95050F50DA05CAC9E6 /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8413E03CC0CD1CC2B996BC1B2E22910 /* Pastel-dummy.m */; };
 		5F9A91D776EEF50375295F27EAA3EEF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		62C39CEBBF37BEDEEABF2F77ABBBC6C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6BD078B96A76E0742C2B961A180A0D95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		78E291B68E2A7A10F9B587AD4481CADB /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71C7F5A8F84219E8610C5FA3A3F14D /* PastelPoint.swift */; };
-		7A7EFB98144B65EC97C765DD4C2B33D2 /* Pods-PACReceipts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7321F7E6F9647D7009576249065E639 /* Pods-PACReceipts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86946017E01A10289D7F31C0E5E0C8A6 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4649157DF41CE35C2103C682A16E953 /* Haptica-dummy.m */; };
-		8B6664605047A0763FFE25EFE65E92E9 /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C2CF33D598052CF0A74183FBD53C24 /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97D1C292F1DA8209A17267A859E6BDF6 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5CB6528B1BE43BCD0948A1F948D99D5 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1CB576D6C8D3D619A8D4BA1931B856 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD107E3AC8BB6E09F65A1A791D4C5B5 /* AlertType.swift */; };
-		A933D4EA5DF151CDE10E60690ED3ECDC /* Pods-PACReceipts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFBFD14D191FA805D9F1A00E6AB739 /* Pods-PACReceipts-dummy.m */; };
-		A96C3D499D9A5D322C7E512DDF32B912 /* ActionHandlerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953890EEBA5076DB33DE1680892C6733 /* ActionHandlerBuilder.swift */; };
+		7200980E6D042069DDC7D4BE91C45426 /* Pods-PACReceipts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7321F7E6F9647D7009576249065E639 /* Pods-PACReceipts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72D242227522424DEC2980601AB58762 /* vocab.bpe in Resources */ = {isa = PBXBuildFile; fileRef = 3D21D2B6AF60379F2C759A91A7782473 /* vocab.bpe */; };
+		7558769E547116571E372A54A83A838D /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1032E88A59AF4B56C9AC756167D58 /* Atomic.swift */; };
+		78E291B68E2A7A10F9B587AD4481CADB /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55713DDDFDDCAEC2237D8C5A440A7CE /* PastelPoint.swift */; };
+		7C284FFC97DECF16500625885C04C245 /* GPTEncoder-GPTEncoder_GPTEncoder in Resources */ = {isa = PBXBuildFile; fileRef = DD352DD7B46519CE0364CD1F40C70D32 /* GPTEncoder-GPTEncoder_GPTEncoder */; };
+		86946017E01A10289D7F31C0E5E0C8A6 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A465516C8B3EDDAD6274F75EFC10B /* Haptica-dummy.m */; };
+		891ED3B9ACA08409527608E63FC958B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD6A550F96D8253C1DA4A1F9EFC1410 /* Helper.swift */; };
+		8B6664605047A0763FFE25EFE65E92E9 /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BEB65CB389C804A1ADF81F8DE7CF96E /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97D1C292F1DA8209A17267A859E6BDF6 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 654A9E6668006E1DAD61CD1FD0B198B7 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BB3A9AE683B08C5E8972A24678FA500 /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AEF28956B28C7716767260D25DAEDA /* ChatGPTAPI.swift */; };
+		9F1CB576D6C8D3D619A8D4BA1931B856 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C316A2736D09546CB380104392DE6023 /* AlertType.swift */; };
+		A11BD41ADB5B7857E3AFC9776FB9AB0A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF650201E8F04CA99ED78AF8EDA6D60 /* Models.swift */; };
+		A4BF152B58F65A9D33BC734DF666D791 /* GPTEncoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A5305AE89200E43E93A68E2D5DE934 /* GPTEncoder-dummy.m */; };
+		A96C3D499D9A5D322C7E512DDF32B912 /* ActionHandlerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A0E5E142F8900017B307148E7478A /* ActionHandlerBuilder.swift */; };
 		B57B1491B8E33FF034AAEDBC4370F513 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BF44FF19FBE1E073BF47F57FA17E6532 /* Alertift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C70E88CCFAD995EC6DB0C425339EF4 /* Alertift.swift */; };
-		D326F850E1E5F1DFCB35377D28E7F89B /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B6FE739EE8C172183A09F6B8D49D0 /* Hapticable.swift */; };
-		DAB18D936A2A0B77BDC579B99AA612C1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14634B3D810E7277EDA093D7D20248 /* Alert.swift */; };
-		E56A2908523DF14CA3FDDF867E5B759C /* Alertift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 885578AAE36451F205C15E0361BE7EE3 /* Alertift-dummy.m */; };
-		E5D5426275E4872EEB48AE090F77CCAD /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DD55BFA94ADB02B7C49A13DC0AF1C /* Debug.swift */; };
-		E773C1A54E262467066991DA447BB1AE /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E095607B40B14FE4F6672F8BBE970FC4 /* PastelGradient.swift */; };
-		EBB126DE2556F14ECD18C90AFFABE518 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53E32BA30BACA054857E90AB9E6BE4 /* PastelLabel.swift */; };
-		FA2AF1FD419EBA6E7EFEFB3DC78040B5 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487311B9087FE0A136D0A1D25358E02 /* ActionSheet.swift */; };
+		BF44FF19FBE1E073BF47F57FA17E6532 /* Alertift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C1726AAA7A3432B68D312EAD7A9859 /* Alertift.swift */; };
+		D0CC23ECCE18CBB53B255B9F834A131C /* GPTEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C65BFE8B528E64205CF4591102C0FF /* GPTEncoder.swift */; };
+		D326F850E1E5F1DFCB35377D28E7F89B /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2EC6E3D09498BC83F8AEB0E08E05F /* Hapticable.swift */; };
+		DAB18D936A2A0B77BDC579B99AA612C1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA39CF10DFD9012FE40B8ACCC31D9A4D /* Alert.swift */; };
+		DABC8C17F57E9BD409230362DB88AE11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E56A2908523DF14CA3FDDF867E5B759C /* Alertift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A416EC34B798CDAA084C87772C83A15 /* Alertift-dummy.m */; };
+		E5D5426275E4872EEB48AE090F77CCAD /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304357D2A0DEA0B7901F52246309A0A0 /* Debug.swift */; };
+		E773C1A54E262467066991DA447BB1AE /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDCB343024B51B2DB92EC54EC866087 /* PastelGradient.swift */; };
+		EBB126DE2556F14ECD18C90AFFABE518 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7910EB3059A114436007C3DA8360FDF /* PastelLabel.swift */; };
+		F078423CA52B83D3202521D3577CAC89 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D200D3E44FD199DF4A89F3644B3DB6 /* Extensions.swift */; };
+		F6B54A8D325CDE379C1CDF6562DF8635 /* ChatGPTSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7863C9D7C2329545073FD3A1942C7026 /* ChatGPTSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DF3DB51A845E9CA3E9E8A78EB0F132 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F9EB57B5ADC9DFE656A606D0164508EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FA2AF1FD419EBA6E7EFEFB3DC78040B5 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8832FF7C81D1E17E2E24FF8C52F86 /* ActionSheet.swift */; };
+		FB55265829839974EFEDDC7B367A4671 /* GPTEncoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 635CD76EDC3061F369D35D49CE1577D4 /* GPTEncoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9A6B40530B0FDC74435BCF3E00656551 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D42DC7F21005DF10871F318716326E5E;
-			remoteInfo = Haptica;
-		};
-		9F38A01E0043E4195A360D534DA29993 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 223ACB2993ED61193B95A52611ED34E7;
-			remoteInfo = Pastel;
-		};
-		BAEB2FE333208C024B29989F544BA9B1 /* PBXContainerItemProxy */ = {
+		40C2ED87EBF3CE13BD9552097C454C4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 73F83E2CAF52E2DF139DF174A93E872C;
 			remoteInfo = Alertift;
 		};
+		789B78E4BC3780B5671A162DA3EABB9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C3767EF8A8A835C6F84E0F03B8FBCF8;
+			remoteInfo = ChatGPTSwift;
+		};
+		B559A77D23044EB8727358B168A66040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851BE90DC38A81CF9F1E30FC7C5B9A98;
+			remoteInfo = "GPTEncoder-GPTEncoder_GPTEncoder";
+		};
+		BA196FCF974704B70B2D052C37E813DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C04B580F3FBBE367AD35FBE73FAA205;
+			remoteInfo = GPTEncoder;
+		};
+		D59F5C86A4535C1C9C9F46A2D54FC4A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D42DC7F21005DF10871F318716326E5E;
+			remoteInfo = Haptica;
+		};
+		EDCC9B48A22D55D3D608184170EAAEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223ACB2993ED61193B95A52611ED34E7;
+			remoteInfo = Pastel;
+		};
+		F05D1A8E2765184ECD00B86D99924E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C04B580F3FBBE367AD35FBE73FAA205;
+			remoteInfo = GPTEncoder;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0475E43F9F68E9F94BD8BF7CCE22AD81 /* Haptica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Haptica.modulemap; sourceTree = "<group>"; };
-		04C70E88CCFAD995EC6DB0C425339EF4 /* Alertift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alertift.swift; path = Sources/Alertift.swift; sourceTree = "<group>"; };
-		0A3B6FE739EE8C172183A09F6B8D49D0 /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hapticable.swift; path = Sources/Hapticable.swift; sourceTree = "<group>"; };
-		18445A1E1CA6876D847215F1C475423E /* Pastel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.debug.xcconfig; sourceTree = "<group>"; };
-		187DD55BFA94ADB02B7C49A13DC0AF1C /* Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debug.swift; path = Sources/Debug.swift; sourceTree = "<group>"; };
-		1D2ABF2DF908153E1EF0D87313E3E3E3 /* Haptica-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-prefix.pch"; sourceTree = "<group>"; };
-		1D60BC9F5933DDF69245C006BED79454 /* Pastel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pastel-Info.plist"; sourceTree = "<group>"; };
-		1FD107E3AC8BB6E09F65A1A791D4C5B5 /* AlertType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertType.swift; path = Sources/AlertType.swift; sourceTree = "<group>"; };
-		261234DA3CD560E4D9DD641428C94B2B /* Haptica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.release.xcconfig; sourceTree = "<group>"; };
-		26C2CF33D598052CF0A74183FBD53C24 /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
-		3487311B9087FE0A136D0A1D25358E02 /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = Sources/ActionSheet.swift; sourceTree = "<group>"; };
+		03AEF28956B28C7716767260D25DAEDA /* ChatGPTAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatGPTAPI.swift; path = Sources/ChatGPTSwift/ChatGPTAPI.swift; sourceTree = "<group>"; };
+		07F48C982B4D60E361A230CCD2EEE1C3 /* ChatGPTSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChatGPTSwift.modulemap; sourceTree = "<group>"; };
+		09C65BFE8B528E64205CF4591102C0FF /* GPTEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPTEncoder.swift; path = Sources/GPTEncoder/GPTEncoder.swift; sourceTree = "<group>"; };
+		0DB73A07A118A7267F426DC3B7CBEB9D /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = Sources/Action.swift; sourceTree = "<group>"; };
+		1C38237884D0886DA8D22B1DD9764C45 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
+		1CD1032E88A59AF4B56C9AC756167D58 /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = Sources/GPTEncoder/Atomic.swift; sourceTree = "<group>"; };
+		2262AB486161413448AE473F7353D2F1 /* Haptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptic.swift; path = Sources/Haptic.swift; sourceTree = "<group>"; };
+		2AD8F74FB55AAB55416E0D213D830FE2 /* Pastel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.release.xcconfig; sourceTree = "<group>"; };
+		2D2A0E5E142F8900017B307148E7478A /* ActionHandlerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionHandlerBuilder.swift; path = Sources/ActionHandlerBuilder.swift; sourceTree = "<group>"; };
+		2DC2EC6E3D09498BC83F8AEB0E08E05F /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hapticable.swift; path = Sources/Hapticable.swift; sourceTree = "<group>"; };
+		2DE003F392D877A84A9602740C59101A /* Alertift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertift-umbrella.h"; sourceTree = "<group>"; };
+		304357D2A0DEA0B7901F52246309A0A0 /* Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debug.swift; path = Sources/Debug.swift; sourceTree = "<group>"; };
+		30E8832FF7C81D1E17E2E24FF8C52F86 /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = Sources/ActionSheet.swift; sourceTree = "<group>"; };
+		34C89CBF88A2AB27F2D85014F475CC98 /* Alertift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertift.debug.xcconfig; sourceTree = "<group>"; };
+		34E80AA4AA05043618861F46CB589D3D /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = Sources/Associated.swift; sourceTree = "<group>"; };
+		352A0C9DAC4622FE2162EDB8E22EA910 /* InnerAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InnerAlertController.swift; path = Sources/InnerAlertController.swift; sourceTree = "<group>"; };
 		35722857CB203F06A3B640F120B4BF60 /* Haptica */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haptica; path = Haptica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE788D2C3FD092DFA24A15D2AF35A9A /* Pods-PACReceipts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PACReceipts-Info.plist"; sourceTree = "<group>"; };
-		3B53E32BA30BACA054857E90AB9E6BE4 /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
+		3C454A0E81012438BD97EE8FFDB5679C /* Alertift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertift.release.xcconfig; sourceTree = "<group>"; };
+		3D21D2B6AF60379F2C759A91A7782473 /* vocab.bpe */ = {isa = PBXFileReference; includeInIndex = 1; name = vocab.bpe; path = Sources/GPTEncoder/Resources/vocab.bpe; sourceTree = "<group>"; };
 		3ECFBFD14D191FA805D9F1A00E6AB739 /* Pods-PACReceipts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PACReceipts-dummy.m"; sourceTree = "<group>"; };
-		3FB1CC81F5E8475125BC4BB59694FDE5 /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
 		4266EC166F1AE9D0505900B903D14EDA /* Pods-PACReceipts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PACReceipts-acknowledgements.plist"; sourceTree = "<group>"; };
-		463DED0CF7FAEF3AB7D5087668AB5405 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
-		5F71C7F5A8F84219E8610C5FA3A3F14D /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
+		42CA3277BED26CE3665DC754EC683D27 /* Haptica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Haptica.modulemap; sourceTree = "<group>"; };
+		4A01CCC361803FF5F41D1B64A69C56E8 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		4A416EC34B798CDAA084C87772C83A15 /* Alertift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alertift-dummy.m"; sourceTree = "<group>"; };
+		5246C9421B72F8952404D0573CBC2C5B /* String+Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Error.swift"; path = "Sources/ChatGPTSwift/String+Error.swift"; sourceTree = "<group>"; };
+		5BFB5754EB5FDEFEC89025765631365C /* GPTEncoder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GPTEncoder.release.xcconfig; sourceTree = "<group>"; };
+		5E3593C59C10000BB14DFFBB8513629F /* Pastel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pastel-Info.plist"; sourceTree = "<group>"; };
+		635CD76EDC3061F369D35D49CE1577D4 /* GPTEncoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GPTEncoder-umbrella.h"; sourceTree = "<group>"; };
 		642EF9934F1B1F0B0E88ED0A2E1D6FB8 /* Pods-PACReceipts */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PACReceipts"; path = Pods_PACReceipts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		67A2394ED6D4E8E26A3280F917BB007A /* InnerAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InnerAlertController.swift; path = Sources/InnerAlertController.swift; sourceTree = "<group>"; };
-		69B4D73B7A81E8E40B19F8634692AF09 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		654A9E6668006E1DAD61CD1FD0B198B7 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
+		68279E35EB7D8162975D70A2F282820F /* GPTEncoder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GPTEncoder-Info.plist"; sourceTree = "<group>"; };
+		6F43A2E81838D42F08A3E65B46DAD9AC /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
+		7181C19C0F8688BC908EF9F00A94537A /* Haptica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.debug.xcconfig; sourceTree = "<group>"; };
+		71ABBFBF19983D3EFA445AA00D225116 /* ChatGPTSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChatGPTSwift-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7947F6F5F4DFE87555395F6F33E3B593 /* Pastel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.release.xcconfig; sourceTree = "<group>"; };
+		75D200D3E44FD199DF4A89F3644B3DB6 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/GPTEncoder/Extensions.swift; sourceTree = "<group>"; };
+		7863C9D7C2329545073FD3A1942C7026 /* ChatGPTSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChatGPTSwift-umbrella.h"; sourceTree = "<group>"; };
+		7BA92E40336BBAB50287EC8504F03035 /* Haptica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.release.xcconfig; sourceTree = "<group>"; };
 		7E610C78B44977D96BDF73919C52E861 /* Pods-PACReceipts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PACReceipts.release.xcconfig"; sourceTree = "<group>"; };
 		7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84645A96F64ABCFDA720FE013AAEBCC6 /* Haptica-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Haptica-Info.plist"; sourceTree = "<group>"; };
-		885578AAE36451F205C15E0361BE7EE3 /* Alertift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alertift-dummy.m"; sourceTree = "<group>"; };
-		90D7EBF046FBB10D2B58A994E96D0748 /* Haptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptic.swift; path = Sources/Haptic.swift; sourceTree = "<group>"; };
-		94D0DAC1772C34D4A252436B9D84972F /* Alertift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alertift-Info.plist"; sourceTree = "<group>"; };
-		953890EEBA5076DB33DE1680892C6733 /* ActionHandlerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionHandlerBuilder.swift; path = Sources/ActionHandlerBuilder.swift; sourceTree = "<group>"; };
-		9D14634B3D810E7277EDA093D7D20248 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Sources/Alert.swift; sourceTree = "<group>"; };
+		80AE1961D8CE36A8C483F21B66E34656 /* ChatGPTSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChatGPTSwift; path = ChatGPTSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81DE9AD13932C00E734ED5F7A9150DD9 /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		8FF650201E8F04CA99ED78AF8EDA6D60 /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Sources/ChatGPTSwift/Models.swift; sourceTree = "<group>"; };
+		9527908B7EA01BE704F1FF9C4E6C7E09 /* GPTEncoder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GPTEncoder.debug.xcconfig; sourceTree = "<group>"; };
+		9BD6A550F96D8253C1DA4A1F9EFC1410 /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Sources/GPTEncoder/Helper.swift; sourceTree = "<group>"; };
+		9BEB65CB389C804A1ADF81F8DE7CF96E /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A26F30256855B04C5DF5D66D35F32260 /* Alertift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertift-umbrella.h"; sourceTree = "<group>"; };
+		9F1313465039F620F18AD4A30C5DC2A7 /* Alertift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertift-prefix.pch"; sourceTree = "<group>"; };
+		A48F41D354EF9481D49F68DE860256DB /* GPTEncoderResources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPTEncoderResources.swift; path = Sources/GPTEncoder/GPTEncoderResources.swift; sourceTree = "<group>"; };
+		A55713DDDFDDCAEC2237D8C5A440A7CE /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
+		A56C4B12E2BD2E2D334D197AA931E42E /* encoder.json */ = {isa = PBXFileReference; includeInIndex = 1; name = encoder.json; path = Sources/GPTEncoder/Resources/encoder.json; sourceTree = "<group>"; };
 		AB1343881D9AD23B478D3F6E38DE7DE1 /* Pods-PACReceipts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PACReceipts.debug.xcconfig"; sourceTree = "<group>"; };
 		B05C0E55850195BEDEF77C14738BB193 /* Pods-PACReceipts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PACReceipts.modulemap"; sourceTree = "<group>"; };
-		B20D2DF93D65A028F80346FB1B8F9AF3 /* Alertift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertift-prefix.pch"; sourceTree = "<group>"; };
-		C6A280CD5843286561415C7FDF22D13F /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		B3BB06DD64A1CA815C133DE686A6C46F /* GPTEncoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GPTEncoder.modulemap; sourceTree = "<group>"; };
+		B40AF08DA8A58A4BB79FFA024EAD73BF /* ResourceBundle-GPTEncoder_GPTEncoder-GPTEncoder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GPTEncoder_GPTEncoder-GPTEncoder-Info.plist"; sourceTree = "<group>"; };
+		B42B1C6ECFCD3F13A45B5A0CE3F96E81 /* GPTEncoder */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GPTEncoder; path = GPTEncoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43F2EBE60AEA1E4DB8611724E0A3E2A /* Haptica-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Haptica-Info.plist"; sourceTree = "<group>"; };
+		B8FFE636F25F9C1327247E96E2409602 /* Pastel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.debug.xcconfig; sourceTree = "<group>"; };
+		C316A2736D09546CB380104392DE6023 /* AlertType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertType.swift; path = Sources/AlertType.swift; sourceTree = "<group>"; };
+		C4C1726AAA7A3432B68D312EAD7A9859 /* Alertift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alertift.swift; path = Sources/Alertift.swift; sourceTree = "<group>"; };
+		C4C18320D55890FE684DC1B201E07703 /* ChatGPTSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChatGPTSwift-prefix.pch"; sourceTree = "<group>"; };
+		CE0A465516C8B3EDDAD6274F75EFC10B /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
 		D026A08D00DAEDE18D782703CA463809 /* Pods-PACReceipts-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PACReceipts-frameworks.sh"; sourceTree = "<group>"; };
 		D0FA80D6159145182DA57745B7B82084 /* Alertift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alertift; path = Alertift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1AE86E10F64AB76DD56A02F19C8C80F /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
-		D4649157DF41CE35C2103C682A16E953 /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
-		D4901DA2DE90F9CCBB76E6B5D47130F1 /* Haptica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.debug.xcconfig; sourceTree = "<group>"; };
-		DAB387A171C8E133DA11A9FB6CF233FE /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
+		D6CB50E541AE78911E34EF2A0C01C4B2 /* Alertift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alertift.modulemap; sourceTree = "<group>"; };
 		DC1FCE20B73EF8EF13C2581C52DBBC37 /* Pods-PACReceipts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PACReceipts-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E095607B40B14FE4F6672F8BBE970FC4 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
-		E5CB6528B1BE43BCD0948A1F948D99D5 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
-		EEEA6E63F979715804F17A868BCB00D3 /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = Sources/Associated.swift; sourceTree = "<group>"; };
-		F0FF81CDB8D5D596B0F6829B62E0354B /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = Sources/Action.swift; sourceTree = "<group>"; };
+		DD352DD7B46519CE0364CD1F40C70D32 /* GPTEncoder-GPTEncoder_GPTEncoder */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "GPTEncoder-GPTEncoder_GPTEncoder"; path = GPTEncoder_GPTEncoder.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD679A14856411F9113403D7EFA15012 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		E4F72BD1E21875C1D713158745E04FFF /* Haptica-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-prefix.pch"; sourceTree = "<group>"; };
+		E71ADEDA0F9765853B4C12B013336FA7 /* ChatGPTSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChatGPTSwift.release.xcconfig; sourceTree = "<group>"; };
+		E8413E03CC0CD1CC2B996BC1B2E22910 /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		E8A5305AE89200E43E93A68E2D5DE934 /* GPTEncoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GPTEncoder-dummy.m"; sourceTree = "<group>"; };
+		E974101D847456E462C99A60ECE44096 /* GPTEncoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GPTEncoder-prefix.pch"; sourceTree = "<group>"; };
+		EA39CF10DFD9012FE40B8ACCC31D9A4D /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Sources/Alert.swift; sourceTree = "<group>"; };
+		ED5868AD07BB3FEAE20C1319ED418B1C /* ChatGPTSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChatGPTSwift-Info.plist"; sourceTree = "<group>"; };
+		F4A139A8CE3C8812D327997B971E1776 /* Alertift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alertift-Info.plist"; sourceTree = "<group>"; };
 		F7321F7E6F9647D7009576249065E639 /* Pods-PACReceipts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PACReceipts-umbrella.h"; sourceTree = "<group>"; };
-		F8674159F4BB9B8805029ECA1EA7D2CD /* Alertift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertift.debug.xcconfig; sourceTree = "<group>"; };
-		FB034D5D128A977B0A0B2AF307B55B6E /* Alertift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertift.release.xcconfig; sourceTree = "<group>"; };
-		FD6705029E69420FE77751195B1C146B /* Alertift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alertift.modulemap; sourceTree = "<group>"; };
+		F7910EB3059A114436007C3DA8360FDF /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
+		FD53968037D91F6DD7217295867AB86D /* ChatGPTSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChatGPTSwift.debug.xcconfig; sourceTree = "<group>"; };
+		FDDCB343024B51B2DB92EC54EC866087 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +197,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9A91D776EEF50375295F27EAA3EEF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F82269485112504F88752B83C40FD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9EB57B5ADC9DFE656A606D0164508EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A76E0DA8C1C46E0636C6F7169CEAB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DF3DB51A845E9CA3E9E8A78EB0F132 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8777E683619FD8B7ED98CFE5B1C819C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,41 +239,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF9884CBA8A1A6BD45E8F16EA37B2F9A /* Frameworks */ = {
+		CEFE3DA53CF3E8D0E858875F01FE3304 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BD078B96A76E0742C2B961A180A0D95 /* Foundation.framework in Frameworks */,
+				DABC8C17F57E9BD409230362DB88AE11 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		182EEF967201B5D26E5287D1DBF90E2D /* Products */ = {
+		2A70CED1ABC2976F8570E018F51CC20B /* ChatGPTSwift */ = {
+			isa = PBXGroup;
+			children = (
+				03AEF28956B28C7716767260D25DAEDA /* ChatGPTAPI.swift */,
+				8FF650201E8F04CA99ED78AF8EDA6D60 /* Models.swift */,
+				5246C9421B72F8952404D0573CBC2C5B /* String+Error.swift */,
+				4E4E026BBDE7760B2055F5791B6A64EF /* Support Files */,
+			);
+			name = ChatGPTSwift;
+			path = ChatGPTSwift;
+			sourceTree = "<group>";
+		};
+		2F360C675482A4C34A742DF1FA8FEC26 /* Haptica */ = {
+			isa = PBXGroup;
+			children = (
+				34E80AA4AA05043618861F46CB589D3D /* Associated.swift */,
+				4A01CCC361803FF5F41D1B64A69C56E8 /* Extensions.swift */,
+				2262AB486161413448AE473F7353D2F1 /* Haptic.swift */,
+				2DC2EC6E3D09498BC83F8AEB0E08E05F /* Hapticable.swift */,
+				DD679A14856411F9113403D7EFA15012 /* Pattern.swift */,
+				CEE0AD71B3B27F0D9D588DAE9A23B86A /* Support Files */,
+			);
+			name = Haptica;
+			path = Haptica;
+			sourceTree = "<group>";
+		};
+		391A0E93A4172F4B57C257856F2BB4A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				608DA6752CDC9CDEA1908543AF51060E /* Alertift */,
+				2A70CED1ABC2976F8570E018F51CC20B /* ChatGPTSwift */,
+				ED2D8C117474308A5970EA1E1E07CFC2 /* GPTEncoder */,
+				2F360C675482A4C34A742DF1FA8FEC26 /* Haptica */,
+				5F901D20D6A68F6B54DCB7D329C1FC63 /* Pastel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46CE4111C635C1B032BB02E1D18A2587 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A56C4B12E2BD2E2D334D197AA931E42E /* encoder.json */,
+				3D21D2B6AF60379F2C759A91A7782473 /* vocab.bpe */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4E4E026BBDE7760B2055F5791B6A64EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				07F48C982B4D60E361A230CCD2EEE1C3 /* ChatGPTSwift.modulemap */,
+				71ABBFBF19983D3EFA445AA00D225116 /* ChatGPTSwift-dummy.m */,
+				ED5868AD07BB3FEAE20C1319ED418B1C /* ChatGPTSwift-Info.plist */,
+				C4C18320D55890FE684DC1B201E07703 /* ChatGPTSwift-prefix.pch */,
+				7863C9D7C2329545073FD3A1942C7026 /* ChatGPTSwift-umbrella.h */,
+				FD53968037D91F6DD7217295867AB86D /* ChatGPTSwift.debug.xcconfig */,
+				E71ADEDA0F9765853B4C12B013336FA7 /* ChatGPTSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChatGPTSwift";
+			sourceTree = "<group>";
+		};
+		4FD4FA676C35EDA935390D855EACAD32 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				D0FA80D6159145182DA57745B7B82084 /* Alertift */,
+				80AE1961D8CE36A8C483F21B66E34656 /* ChatGPTSwift */,
+				B42B1C6ECFCD3F13A45B5A0CE3F96E81 /* GPTEncoder */,
+				DD352DD7B46519CE0364CD1F40C70D32 /* GPTEncoder-GPTEncoder_GPTEncoder */,
 				35722857CB203F06A3B640F120B4BF60 /* Haptica */,
 				7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */,
 				642EF9934F1B1F0B0E88ED0A2E1D6FB8 /* Pods-PACReceipts */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		493F9676A64F8359460A7BDCAB77692B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DAB387A171C8E133DA11A9FB6CF233FE /* Pastel.modulemap */,
-				C6A280CD5843286561415C7FDF22D13F /* Pastel-dummy.m */,
-				1D60BC9F5933DDF69245C006BED79454 /* Pastel-Info.plist */,
-				3FB1CC81F5E8475125BC4BB59694FDE5 /* Pastel-prefix.pch */,
-				E5CB6528B1BE43BCD0948A1F948D99D5 /* Pastel-umbrella.h */,
-				18445A1E1CA6876D847215F1C475423E /* Pastel.debug.xcconfig */,
-				7947F6F5F4DFE87555395F6F33E3B593 /* Pastel.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pastel";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -188,29 +334,49 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6EAE56E6E58D4F69DD32CE6B7EF8F4F7 /* Pods */ = {
+		5F901D20D6A68F6B54DCB7D329C1FC63 /* Pastel */ = {
 			isa = PBXGroup;
 			children = (
-				E1B33C84E1BBD70442831A341F6D1DBE /* Alertift */,
-				DC5C2AC7C2F37B08399A4D4E26BD04AF /* Haptica */,
-				A36BCD484FE9746990DEC864245E54D5 /* Pastel */,
+				FDDCB343024B51B2DB92EC54EC866087 /* PastelGradient.swift */,
+				F7910EB3059A114436007C3DA8360FDF /* PastelLabel.swift */,
+				A55713DDDFDDCAEC2237D8C5A440A7CE /* PastelPoint.swift */,
+				1C38237884D0886DA8D22B1DD9764C45 /* PastelView.swift */,
+				75C019E3799C3ABC3F4EF32F255EDEEE /* Support Files */,
 			);
-			name = Pods;
+			name = Pastel;
+			path = Pastel;
 			sourceTree = "<group>";
 		};
-		83C10114313733F87F83FD2DE33FC682 /* Support Files */ = {
+		608DA6752CDC9CDEA1908543AF51060E /* Alertift */ = {
 			isa = PBXGroup;
 			children = (
-				0475E43F9F68E9F94BD8BF7CCE22AD81 /* Haptica.modulemap */,
-				D4649157DF41CE35C2103C682A16E953 /* Haptica-dummy.m */,
-				84645A96F64ABCFDA720FE013AAEBCC6 /* Haptica-Info.plist */,
-				1D2ABF2DF908153E1EF0D87313E3E3E3 /* Haptica-prefix.pch */,
-				26C2CF33D598052CF0A74183FBD53C24 /* Haptica-umbrella.h */,
-				D4901DA2DE90F9CCBB76E6B5D47130F1 /* Haptica.debug.xcconfig */,
-				261234DA3CD560E4D9DD641428C94B2B /* Haptica.release.xcconfig */,
+				0DB73A07A118A7267F426DC3B7CBEB9D /* Action.swift */,
+				2D2A0E5E142F8900017B307148E7478A /* ActionHandlerBuilder.swift */,
+				30E8832FF7C81D1E17E2E24FF8C52F86 /* ActionSheet.swift */,
+				EA39CF10DFD9012FE40B8ACCC31D9A4D /* Alert.swift */,
+				C4C1726AAA7A3432B68D312EAD7A9859 /* Alertift.swift */,
+				C316A2736D09546CB380104392DE6023 /* AlertType.swift */,
+				304357D2A0DEA0B7901F52246309A0A0 /* Debug.swift */,
+				352A0C9DAC4622FE2162EDB8E22EA910 /* InnerAlertController.swift */,
+				A904E4FE30C13676AF5B3D58E6708658 /* Support Files */,
+			);
+			name = Alertift;
+			path = Alertift;
+			sourceTree = "<group>";
+		};
+		75C019E3799C3ABC3F4EF32F255EDEEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F43A2E81838D42F08A3E65B46DAD9AC /* Pastel.modulemap */,
+				E8413E03CC0CD1CC2B996BC1B2E22910 /* Pastel-dummy.m */,
+				5E3593C59C10000BB14DFFBB8513629F /* Pastel-Info.plist */,
+				81DE9AD13932C00E734ED5F7A9150DD9 /* Pastel-prefix.pch */,
+				654A9E6668006E1DAD61CD1FD0B198B7 /* Pastel-umbrella.h */,
+				B8FFE636F25F9C1327247E96E2409602 /* Pastel.debug.xcconfig */,
+				2AD8F74FB55AAB55416E0D213D830FE2 /* Pastel.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Haptica";
+			path = "../Target Support Files/Pastel";
 			sourceTree = "<group>";
 		};
 		87F5A4AEA222963C1AE9D5F0CEA23423 /* Pods-PACReceipts */ = {
@@ -230,32 +396,19 @@
 			path = "Target Support Files/Pods-PACReceipts";
 			sourceTree = "<group>";
 		};
-		9DCC1C21DA8A6780C8E09C6CE3EE878A /* Support Files */ = {
+		A904E4FE30C13676AF5B3D58E6708658 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD6705029E69420FE77751195B1C146B /* Alertift.modulemap */,
-				885578AAE36451F205C15E0361BE7EE3 /* Alertift-dummy.m */,
-				94D0DAC1772C34D4A252436B9D84972F /* Alertift-Info.plist */,
-				B20D2DF93D65A028F80346FB1B8F9AF3 /* Alertift-prefix.pch */,
-				A26F30256855B04C5DF5D66D35F32260 /* Alertift-umbrella.h */,
-				F8674159F4BB9B8805029ECA1EA7D2CD /* Alertift.debug.xcconfig */,
-				FB034D5D128A977B0A0B2AF307B55B6E /* Alertift.release.xcconfig */,
+				D6CB50E541AE78911E34EF2A0C01C4B2 /* Alertift.modulemap */,
+				4A416EC34B798CDAA084C87772C83A15 /* Alertift-dummy.m */,
+				F4A139A8CE3C8812D327997B971E1776 /* Alertift-Info.plist */,
+				9F1313465039F620F18AD4A30C5DC2A7 /* Alertift-prefix.pch */,
+				2DE003F392D877A84A9602740C59101A /* Alertift-umbrella.h */,
+				34C89CBF88A2AB27F2D85014F475CC98 /* Alertift.debug.xcconfig */,
+				3C454A0E81012438BD97EE8FFDB5679C /* Alertift.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alertift";
-			sourceTree = "<group>";
-		};
-		A36BCD484FE9746990DEC864245E54D5 /* Pastel */ = {
-			isa = PBXGroup;
-			children = (
-				E095607B40B14FE4F6672F8BBE970FC4 /* PastelGradient.swift */,
-				3B53E32BA30BACA054857E90AB9E6BE4 /* PastelLabel.swift */,
-				5F71C7F5A8F84219E8610C5FA3A3F14D /* PastelPoint.swift */,
-				463DED0CF7FAEF3AB7D5087668AB5405 /* PastelView.swift */,
-				493F9676A64F8359460A7BDCAB77692B /* Support Files */,
-			);
-			name = Pastel;
-			path = Pastel;
 			sourceTree = "<group>";
 		};
 		C51F9CACE3780BF40D41AF974D46B975 /* Targets Support Files */ = {
@@ -266,15 +419,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		CEE0AD71B3B27F0D9D588DAE9A23B86A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42CA3277BED26CE3665DC754EC683D27 /* Haptica.modulemap */,
+				CE0A465516C8B3EDDAD6274F75EFC10B /* Haptica-dummy.m */,
+				B43F2EBE60AEA1E4DB8611724E0A3E2A /* Haptica-Info.plist */,
+				E4F72BD1E21875C1D713158745E04FFF /* Haptica-prefix.pch */,
+				9BEB65CB389C804A1ADF81F8DE7CF96E /* Haptica-umbrella.h */,
+				7181C19C0F8688BC908EF9F00A94537A /* Haptica.debug.xcconfig */,
+				7BA92E40336BBAB50287EC8504F03035 /* Haptica.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Haptica";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6EAE56E6E58D4F69DD32CE6B7EF8F4F7 /* Pods */,
-				182EEF967201B5D26E5287D1DBF90E2D /* Products */,
+				391A0E93A4172F4B57C257856F2BB4A9 /* Pods */,
+				4FD4FA676C35EDA935390D855EACAD32 /* Products */,
 				C51F9CACE3780BF40D41AF974D46B975 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D02D22A539FBE22BF235C282DFCBC15F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB06DD64A1CA815C133DE686A6C46F /* GPTEncoder.modulemap */,
+				E8A5305AE89200E43E93A68E2D5DE934 /* GPTEncoder-dummy.m */,
+				68279E35EB7D8162975D70A2F282820F /* GPTEncoder-Info.plist */,
+				E974101D847456E462C99A60ECE44096 /* GPTEncoder-prefix.pch */,
+				635CD76EDC3061F369D35D49CE1577D4 /* GPTEncoder-umbrella.h */,
+				9527908B7EA01BE704F1FF9C4E6C7E09 /* GPTEncoder.debug.xcconfig */,
+				5BFB5754EB5FDEFEC89025765631365C /* GPTEncoder.release.xcconfig */,
+				B40AF08DA8A58A4BB79FFA024EAD73BF /* ResourceBundle-GPTEncoder_GPTEncoder-GPTEncoder-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GPTEncoder";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -285,40 +469,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC5C2AC7C2F37B08399A4D4E26BD04AF /* Haptica */ = {
+		ED2D8C117474308A5970EA1E1E07CFC2 /* GPTEncoder */ = {
 			isa = PBXGroup;
 			children = (
-				EEEA6E63F979715804F17A868BCB00D3 /* Associated.swift */,
-				D1AE86E10F64AB76DD56A02F19C8C80F /* Extensions.swift */,
-				90D7EBF046FBB10D2B58A994E96D0748 /* Haptic.swift */,
-				0A3B6FE739EE8C172183A09F6B8D49D0 /* Hapticable.swift */,
-				69B4D73B7A81E8E40B19F8634692AF09 /* Pattern.swift */,
-				83C10114313733F87F83FD2DE33FC682 /* Support Files */,
+				1CD1032E88A59AF4B56C9AC756167D58 /* Atomic.swift */,
+				75D200D3E44FD199DF4A89F3644B3DB6 /* Extensions.swift */,
+				09C65BFE8B528E64205CF4591102C0FF /* GPTEncoder.swift */,
+				A48F41D354EF9481D49F68DE860256DB /* GPTEncoderResources.swift */,
+				9BD6A550F96D8253C1DA4A1F9EFC1410 /* Helper.swift */,
+				46CE4111C635C1B032BB02E1D18A2587 /* Resources */,
+				D02D22A539FBE22BF235C282DFCBC15F /* Support Files */,
 			);
-			name = Haptica;
-			path = Haptica;
-			sourceTree = "<group>";
-		};
-		E1B33C84E1BBD70442831A341F6D1DBE /* Alertift */ = {
-			isa = PBXGroup;
-			children = (
-				F0FF81CDB8D5D596B0F6829B62E0354B /* Action.swift */,
-				953890EEBA5076DB33DE1680892C6733 /* ActionHandlerBuilder.swift */,
-				3487311B9087FE0A136D0A1D25358E02 /* ActionSheet.swift */,
-				9D14634B3D810E7277EDA093D7D20248 /* Alert.swift */,
-				04C70E88CCFAD995EC6DB0C425339EF4 /* Alertift.swift */,
-				1FD107E3AC8BB6E09F65A1A791D4C5B5 /* AlertType.swift */,
-				187DD55BFA94ADB02B7C49A13DC0AF1C /* Debug.swift */,
-				67A2394ED6D4E8E26A3280F917BB007A /* InnerAlertController.swift */,
-				9DCC1C21DA8A6780C8E09C6CE3EE878A /* Support Files */,
-			);
-			name = Alertift;
-			path = Alertift;
+			name = GPTEncoder;
+			path = GPTEncoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3048C253047E4009E3B630504F48DDD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B54A8D325CDE379C1CDF6562DF8635 /* ChatGPTSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35125F8D6C171A57701676142AF46F05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,11 +511,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C62D5EA2BEFC7E0BC9566B947E04C092 /* Headers */ = {
+		75C13D217C6FEB5493D5FBFCDC9A7697 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7EFB98144B65EC97C765DD4C2B33D2 /* Pods-PACReceipts-umbrella.h in Headers */,
+				FB55265829839974EFEDDC7B367A4671 /* GPTEncoder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		871F02B83081D50EE3D749EE5F7399A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7200980E6D042069DDC7D4BE91C45426 /* Pods-PACReceipts-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +538,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0C04B580F3FBBE367AD35FBE73FAA205 /* GPTEncoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBC189389520D64E1FE26AB0BEFD5C9 /* Build configuration list for PBXNativeTarget "GPTEncoder" */;
+			buildPhases = (
+				75C13D217C6FEB5493D5FBFCDC9A7697 /* Headers */,
+				892DDBA273DFDD2CF33AC2BD12CBC1D1 /* Sources */,
+				1F82269485112504F88752B83C40FD06 /* Frameworks */,
+				8FCE06AAD91516A18899F8C370EFEC25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D3D6B0316D62EB01D356B4F2FCC436A /* PBXTargetDependency */,
+			);
+			name = GPTEncoder;
+			productName = GPTEncoder;
+			productReference = B42B1C6ECFCD3F13A45B5A0CE3F96E81 /* GPTEncoder */;
+			productType = "com.apple.product-type.framework";
+		};
 		223ACB2993ED61193B95A52611ED34E7 /* Pastel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 391D83321B48768745DD4E3C7A72FD5E /* Build configuration list for PBXNativeTarget "Pastel" */;
@@ -370,6 +573,25 @@
 			name = Pastel;
 			productName = Pastel;
 			productReference = 7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C3767EF8A8A835C6F84E0F03B8FBCF8 /* ChatGPTSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C118066E2835F39C715844B721D3B84C /* Build configuration list for PBXNativeTarget "ChatGPTSwift" */;
+			buildPhases = (
+				3048C253047E4009E3B630504F48DDD3 /* Headers */,
+				E536670CD77F4485BE11C5AF89E5154C /* Sources */,
+				CEFE3DA53CF3E8D0E858875F01FE3304 /* Frameworks */,
+				740F3C92955A7A7C91A7367ACE8C00E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA534FAF6298A92205C5135EECD6CB98 /* PBXTargetDependency */,
+			);
+			name = ChatGPTSwift;
+			productName = ChatGPTSwift;
+			productReference = 80AE1961D8CE36A8C483F21B66E34656 /* ChatGPTSwift */;
 			productType = "com.apple.product-type.framework";
 		};
 		73F83E2CAF52E2DF139DF174A93E872C /* Alertift */ = {
@@ -389,6 +611,23 @@
 			productName = Alertift;
 			productReference = D0FA80D6159145182DA57745B7B82084 /* Alertift */;
 			productType = "com.apple.product-type.framework";
+		};
+		851BE90DC38A81CF9F1E30FC7C5B9A98 /* GPTEncoder-GPTEncoder_GPTEncoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0087FB3A6A67657721173EF52440266 /* Build configuration list for PBXNativeTarget "GPTEncoder-GPTEncoder_GPTEncoder" */;
+			buildPhases = (
+				8F7230FE0EE670BC56D05F0B4279A746 /* Sources */,
+				8777E683619FD8B7ED98CFE5B1C819C9 /* Frameworks */,
+				B1994B1F3B0F24E3EEE2FDDD8B0ECE29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPTEncoder-GPTEncoder_GPTEncoder";
+			productName = GPTEncoder_GPTEncoder;
+			productReference = DD352DD7B46519CE0364CD1F40C70D32 /* GPTEncoder-GPTEncoder_GPTEncoder */;
+			productType = "com.apple.product-type.bundle";
 		};
 		D42DC7F21005DF10871F318716326E5E /* Haptica */ = {
 			isa = PBXNativeTarget;
@@ -410,19 +649,21 @@
 		};
 		E3EBCF1503C0678ABEB0D4901FB4DC97 /* Pods-PACReceipts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F07A8216CAB93395C205F87CD1D3149 /* Build configuration list for PBXNativeTarget "Pods-PACReceipts" */;
+			buildConfigurationList = 43AECF5520FE94170D6C7502F2F77419 /* Build configuration list for PBXNativeTarget "Pods-PACReceipts" */;
 			buildPhases = (
-				C62D5EA2BEFC7E0BC9566B947E04C092 /* Headers */,
-				75414C446CAF9ABDE5673A34C7ED6C00 /* Sources */,
-				EF9884CBA8A1A6BD45E8F16EA37B2F9A /* Frameworks */,
-				0C9A11BA8A09619D42D028F6EA9E9F69 /* Resources */,
+				871F02B83081D50EE3D749EE5F7399A4 /* Headers */,
+				F2099CD2AACC99DFE719E37B18A61791 /* Sources */,
+				4A76E0DA8C1C46E0636C6F7169CEAB1B /* Frameworks */,
+				F278662A46FCB2B22950CB4860EEC43B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2D5F4CCBD1FB878238FD8233A7542F88 /* PBXTargetDependency */,
-				C299FB9B0B307B5751D9CFE402D081B3 /* PBXTargetDependency */,
-				643AEBF6FB805EB2483A6BEB25C336F6 /* PBXTargetDependency */,
+				0BE521CC983ED5BBA1AA94711C84A880 /* PBXTargetDependency */,
+				50D0C685A4F05D56B028C10929D8D48B /* PBXTargetDependency */,
+				9AD8A723585F386E8DA5FB5F9F32AF5A /* PBXTargetDependency */,
+				A65EFDD990FBC6D82E3DE14AA99B705C /* PBXTargetDependency */,
+				04619258F087C86E30F9BCC6E126756D /* PBXTargetDependency */,
 			);
 			name = "Pods-PACReceipts";
 			productName = Pods_PACReceipts;
@@ -447,11 +688,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 182EEF967201B5D26E5287D1DBF90E2D /* Products */;
+			productRefGroup = 4FD4FA676C35EDA935390D855EACAD32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				73F83E2CAF52E2DF139DF174A93E872C /* Alertift */,
+				6C3767EF8A8A835C6F84E0F03B8FBCF8 /* ChatGPTSwift */,
+				0C04B580F3FBBE367AD35FBE73FAA205 /* GPTEncoder */,
+				851BE90DC38A81CF9F1E30FC7C5B9A98 /* GPTEncoder-GPTEncoder_GPTEncoder */,
 				D42DC7F21005DF10871F318716326E5E /* Haptica */,
 				223ACB2993ED61193B95A52611ED34E7 /* Pastel */,
 				E3EBCF1503C0678ABEB0D4901FB4DC97 /* Pods-PACReceipts */,
@@ -460,13 +704,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0C9A11BA8A09619D42D028F6EA9E9F69 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5544B948C0E804D01575636D7B081E66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -481,7 +718,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		740F3C92955A7A7C91A7367ACE8C00E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCE06AAD91516A18899F8C370EFEC25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C284FFC97DECF16500625885C04C245 /* GPTEncoder-GPTEncoder_GPTEncoder in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C69B2C722948927A85ACC0EB0D41767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1994B1F3B0F24E3EEE2FDDD8B0ECE29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D3D76690C5C26821D14D1A5611C892 /* encoder.json in Resources */,
+				72D242227522424DEC2980601AB58762 /* vocab.bpe in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F278662A46FCB2B22950CB4860EEC43B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -503,11 +771,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75414C446CAF9ABDE5673A34C7ED6C00 /* Sources */ = {
+		892DDBA273DFDD2CF33AC2BD12CBC1D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A933D4EA5DF151CDE10E60690ED3ECDC /* Pods-PACReceipts-dummy.m in Sources */,
+				7558769E547116571E372A54A83A838D /* Atomic.swift in Sources */,
+				F078423CA52B83D3202521D3577CAC89 /* Extensions.swift in Sources */,
+				D0CC23ECCE18CBB53B255B9F834A131C /* GPTEncoder.swift in Sources */,
+				A4BF152B58F65A9D33BC734DF666D791 /* GPTEncoder-dummy.m in Sources */,
+				22A7E4BF9C7EEE0F5617E73CA6954B81 /* GPTEncoderResources.swift in Sources */,
+				891ED3B9ACA08409527608E63FC958B7 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7230FE0EE670BC56D05F0B4279A746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +801,25 @@
 				86946017E01A10289D7F31C0E5E0C8A6 /* Haptica-dummy.m in Sources */,
 				D326F850E1E5F1DFCB35377D28E7F89B /* Hapticable.swift in Sources */,
 				0F3D71986551CD8FB502F9364912232D /* Pattern.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E536670CD77F4485BE11C5AF89E5154C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB3A9AE683B08C5E8972A24678FA500 /* ChatGPTAPI.swift in Sources */,
+				1FE12E7262C0B00313A4EE943C3E8E06 /* ChatGPTSwift-dummy.m in Sources */,
+				A11BD41ADB5B7857E3AFC9776FB9AB0A /* Models.swift in Sources */,
+				32729EA164A563CF0054F683BD9B72FD /* String+Error.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2099CD2AACC99DFE719E37B18A61791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A089296347AC8BE3EA3ECA0A67B475 /* Pods-PACReceipts-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,32 +842,55 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D5F4CCBD1FB878238FD8233A7542F88 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alertift;
-			target = 73F83E2CAF52E2DF139DF174A93E872C /* Alertift */;
-			targetProxy = BAEB2FE333208C024B29989F544BA9B1 /* PBXContainerItemProxy */;
-		};
-		643AEBF6FB805EB2483A6BEB25C336F6 /* PBXTargetDependency */ = {
+		04619258F087C86E30F9BCC6E126756D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Pastel;
 			target = 223ACB2993ED61193B95A52611ED34E7 /* Pastel */;
-			targetProxy = 9F38A01E0043E4195A360D534DA29993 /* PBXContainerItemProxy */;
+			targetProxy = EDCC9B48A22D55D3D608184170EAAEC4 /* PBXContainerItemProxy */;
 		};
-		C299FB9B0B307B5751D9CFE402D081B3 /* PBXTargetDependency */ = {
+		0BE521CC983ED5BBA1AA94711C84A880 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alertift;
+			target = 73F83E2CAF52E2DF139DF174A93E872C /* Alertift */;
+			targetProxy = 40C2ED87EBF3CE13BD9552097C454C4F /* PBXContainerItemProxy */;
+		};
+		50D0C685A4F05D56B028C10929D8D48B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChatGPTSwift;
+			target = 6C3767EF8A8A835C6F84E0F03B8FBCF8 /* ChatGPTSwift */;
+			targetProxy = 789B78E4BC3780B5671A162DA3EABB9C /* PBXContainerItemProxy */;
+		};
+		8D3D6B0316D62EB01D356B4F2FCC436A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GPTEncoder-GPTEncoder_GPTEncoder";
+			target = 851BE90DC38A81CF9F1E30FC7C5B9A98 /* GPTEncoder-GPTEncoder_GPTEncoder */;
+			targetProxy = B559A77D23044EB8727358B168A66040 /* PBXContainerItemProxy */;
+		};
+		9AD8A723585F386E8DA5FB5F9F32AF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPTEncoder;
+			target = 0C04B580F3FBBE367AD35FBE73FAA205 /* GPTEncoder */;
+			targetProxy = BA196FCF974704B70B2D052C37E813DE /* PBXContainerItemProxy */;
+		};
+		A65EFDD990FBC6D82E3DE14AA99B705C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Haptica;
 			target = D42DC7F21005DF10871F318716326E5E /* Haptica */;
-			targetProxy = 9A6B40530B0FDC74435BCF3E00656551 /* PBXContainerItemProxy */;
+			targetProxy = D59F5C86A4535C1C9C9F46A2D54FC4A0 /* PBXContainerItemProxy */;
+		};
+		CA534FAF6298A92205C5135EECD6CB98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPTEncoder;
+			target = 0C04B580F3FBBE367AD35FBE73FAA205 /* GPTEncoder */;
+			targetProxy = F05D1A8E2765184ECD00B86D99924E81 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C164A246D0DFB9AD34B04E4573F6A3A /* Debug */ = {
+		33202AAE642369340D768CDE38AE5109 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB1343881D9AD23B478D3F6E38DE7DE1 /* Pods-PACReceipts.debug.xcconfig */;
+			baseConfigurationReference = FD53968037D91F6DD7217295867AB86D /* ChatGPTSwift.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -578,23 +900,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ChatGPTSwift/ChatGPTSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChatGPTSwift/ChatGPTSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ChatGPTSwift/ChatGPTSwift.modulemap";
+				PRODUCT_MODULE_NAME = ChatGPTSwift;
+				PRODUCT_NAME = ChatGPTSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -603,7 +924,7 @@
 		};
 		36109D1F95E26F56D59DA3649F63D07A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18445A1E1CA6876D847215F1C475423E /* Pastel.debug.xcconfig */;
+			baseConfigurationReference = B8FFE636F25F9C1327247E96E2409602 /* Pastel.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -616,7 +937,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,7 +958,7 @@
 		};
 		369A3BDCA3AADCE19F6956D0B5FBC4FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7947F6F5F4DFE87555395F6F33E3B593 /* Pastel.release.xcconfig */;
+			baseConfigurationReference = 2AD8F74FB55AAB55416E0D213D830FE2 /* Pastel.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -650,7 +971,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -670,9 +991,47 @@
 			};
 			name = Release;
 		};
+		467FE4586A7AC6251170ED54C9533144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E610C78B44977D96BDF73919C52E861 /* Pods-PACReceipts.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		734E39DB34E8C34E41A3581D71742741 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB034D5D128A977B0A0B2AF307B55B6E /* Alertift.release.xcconfig */;
+			baseConfigurationReference = 3C454A0E81012438BD97EE8FFDB5679C /* Alertift.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -685,7 +1044,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alertift/Alertift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alertift/Alertift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -771,9 +1130,9 @@
 			};
 			name = Debug;
 		};
-		9C584BDD16963140FE7DF04B14A31278 /* Release */ = {
+		8BCF232D6E9558DD035E928AD45C8BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E610C78B44977D96BDF73919C52E861 /* Pods-PACReceipts.release.xcconfig */;
+			baseConfigurationReference = AB1343881D9AD23B478D3F6E38DE7DE1 /* Pods-PACReceipts.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -787,7 +1146,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -803,15 +1162,85 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90C1EC1BCEBD7EFE03A4D6C8DAB0E7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFB5754EB5FDEFEC89025765631365C /* GPTEncoder.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GPTEncoder/GPTEncoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GPTEncoder/GPTEncoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GPTEncoder/GPTEncoder.modulemap";
+				PRODUCT_MODULE_NAME = GPTEncoder;
+				PRODUCT_NAME = GPTEncoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
+		A74D19D4F4B53E81663DF1F8B1E4E1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9527908B7EA01BE704F1FF9C4E6C7E09 /* GPTEncoder.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GPTEncoder/GPTEncoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GPTEncoder/GPTEncoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GPTEncoder/GPTEncoder.modulemap";
+				PRODUCT_MODULE_NAME = GPTEncoder;
+				PRODUCT_NAME = GPTEncoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B5F6D66998940E592E09422FD8683006 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4901DA2DE90F9CCBB76E6B5D47130F1 /* Haptica.debug.xcconfig */;
+			baseConfigurationReference = 7181C19C0F8688BC908EF9F00A94537A /* Haptica.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -824,7 +1253,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Haptica/Haptica-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Haptica/Haptica-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -845,7 +1274,7 @@
 		};
 		D075AAA2639700CED9925DE81CEEF8B7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 261234DA3CD560E4D9DD641428C94B2B /* Haptica.release.xcconfig */;
+			baseConfigurationReference = 7BA92E40336BBAB50287EC8504F03035 /* Haptica.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -858,7 +1287,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Haptica/Haptica-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Haptica/Haptica-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -871,6 +1300,59 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8467B41C6B24ABCBB0F0FD15B7016A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9527908B7EA01BE704F1FF9C4E6C7E09 /* GPTEncoder.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GPTEncoder";
+				IBSC_MODULE = GPTEncoder;
+				INFOPLIST_FILE = "Target Support Files/GPTEncoder/ResourceBundle-GPTEncoder_GPTEncoder-GPTEncoder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = GPTEncoder_GPTEncoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FE2CC27351E670EEE334FC40F8D7A9CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E71ADEDA0F9765853B4C12B013336FA7 /* ChatGPTSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChatGPTSwift/ChatGPTSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChatGPTSwift/ChatGPTSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ChatGPTSwift/ChatGPTSwift.modulemap";
+				PRODUCT_MODULE_NAME = ChatGPTSwift;
+				PRODUCT_NAME = ChatGPTSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -942,7 +1424,7 @@
 		};
 		FF18D43449CCF2E47D43D1331DE7E78F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8674159F4BB9B8805029ECA1EA7D2CD /* Alertift.debug.xcconfig */;
+			baseConfigurationReference = 34C89CBF88A2AB27F2D85014F475CC98 /* Alertift.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -955,7 +1437,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alertift/Alertift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alertift/Alertift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -974,6 +1456,23 @@
 			};
 			name = Debug;
 		};
+		FF33C94B409E33F6315C6784234F86C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFB5754EB5FDEFEC89025765631365C /* GPTEncoder.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GPTEncoder";
+				IBSC_MODULE = GPTEncoder;
+				INFOPLIST_FILE = "Target Support Files/GPTEncoder/ResourceBundle-GPTEncoder_GPTEncoder-GPTEncoder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = GPTEncoder_GPTEncoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -982,6 +1481,15 @@
 			buildConfigurations = (
 				36109D1F95E26F56D59DA3649F63D07A /* Debug */,
 				369A3BDCA3AADCE19F6956D0B5FBC4FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43AECF5520FE94170D6C7502F2F77419 /* Build configuration list for PBXNativeTarget "Pods-PACReceipts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCF232D6E9558DD035E928AD45C8BBB /* Debug */,
+				467FE4586A7AC6251170ED54C9533144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1004,11 +1512,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F07A8216CAB93395C205F87CD1D3149 /* Build configuration list for PBXNativeTarget "Pods-PACReceipts" */ = {
+		ACBC189389520D64E1FE26AB0BEFD5C9 /* Build configuration list for PBXNativeTarget "GPTEncoder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C164A246D0DFB9AD34B04E4573F6A3A /* Debug */,
-				9C584BDD16963140FE7DF04B14A31278 /* Release */,
+				A74D19D4F4B53E81663DF1F8B1E4E1D7 /* Debug */,
+				90C1EC1BCEBD7EFE03A4D6C8DAB0E7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C118066E2835F39C715844B721D3B84C /* Build configuration list for PBXNativeTarget "ChatGPTSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33202AAE642369340D768CDE38AE5109 /* Debug */,
+				FE2CC27351E670EEE334FC40F8D7A9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1018,6 +1535,15 @@
 			buildConfigurations = (
 				FF18D43449CCF2E47D43D1331DE7E78F /* Debug */,
 				734E39DB34E8C34E41A3581D71742741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0087FB3A6A67657721173EF52440266 /* Build configuration list for PBXNativeTarget "GPTEncoder-GPTEncoder_GPTEncoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8467B41C6B24ABCBB0F0FD15B7016A9 /* Debug */,
+				FF33C94B409E33F6315C6784234F86C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
