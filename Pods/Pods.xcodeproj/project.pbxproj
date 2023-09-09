@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F3D71986551CD8FB502F9364912232D /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B4D73B7A81E8E40B19F8634692AF09 /* Pattern.swift */; };
+		0FA97BDD0DD156174A6AA156068A16FB /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D7EBF046FBB10D2B58A994E96D0748 /* Haptic.swift */; };
+		15CD915BCF89E46681099D1E2721C435 /* InnerAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A2394ED6D4E8E26A3280F917BB007A /* InnerAlertController.swift */; };
+		1DE2D714506964B688948D2CAE10C62B /* Alertift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A26F30256855B04C5DF5D66D35F32260 /* Alertift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CE6B63E1925C6F9D659AD6A491CD30D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE86E10F64AB76DD56A02F19C8C80F /* Extensions.swift */; };
+		341CA286FB94ACD84B287E9C230EEE14 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463DED0CF7FAEF3AB7D5087668AB5405 /* PastelView.swift */; };
+		43A7F71351E825C0C089BFEE5B99405A /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA6E63F979715804F17A868BCB00D3 /* Associated.swift */; };
+		4B278B10F0B7DAAF6C64459B1E259410 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FF81CDB8D5D596B0F6829B62E0354B /* Action.swift */; };
+		5E3D1FE2B71A8A95050F50DA05CAC9E6 /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A280CD5843286561415C7FDF22D13F /* Pastel-dummy.m */; };
+		5F9A91D776EEF50375295F27EAA3EEF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		62C39CEBBF37BEDEEABF2F77ABBBC6C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6BD078B96A76E0742C2B961A180A0D95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		78E291B68E2A7A10F9B587AD4481CADB /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71C7F5A8F84219E8610C5FA3A3F14D /* PastelPoint.swift */; };
+		7A7EFB98144B65EC97C765DD4C2B33D2 /* Pods-PACReceipts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7321F7E6F9647D7009576249065E639 /* Pods-PACReceipts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86946017E01A10289D7F31C0E5E0C8A6 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4649157DF41CE35C2103C682A16E953 /* Haptica-dummy.m */; };
+		8B6664605047A0763FFE25EFE65E92E9 /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C2CF33D598052CF0A74183FBD53C24 /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97D1C292F1DA8209A17267A859E6BDF6 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5CB6528B1BE43BCD0948A1F948D99D5 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F1CB576D6C8D3D619A8D4BA1931B856 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD107E3AC8BB6E09F65A1A791D4C5B5 /* AlertType.swift */; };
+		A933D4EA5DF151CDE10E60690ED3ECDC /* Pods-PACReceipts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFBFD14D191FA805D9F1A00E6AB739 /* Pods-PACReceipts-dummy.m */; };
+		A96C3D499D9A5D322C7E512DDF32B912 /* ActionHandlerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953890EEBA5076DB33DE1680892C6733 /* ActionHandlerBuilder.swift */; };
+		B57B1491B8E33FF034AAEDBC4370F513 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BF44FF19FBE1E073BF47F57FA17E6532 /* Alertift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C70E88CCFAD995EC6DB0C425339EF4 /* Alertift.swift */; };
+		D326F850E1E5F1DFCB35377D28E7F89B /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B6FE739EE8C172183A09F6B8D49D0 /* Hapticable.swift */; };
+		DAB18D936A2A0B77BDC579B99AA612C1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14634B3D810E7277EDA093D7D20248 /* Alert.swift */; };
+		E56A2908523DF14CA3FDDF867E5B759C /* Alertift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 885578AAE36451F205C15E0361BE7EE3 /* Alertift-dummy.m */; };
+		E5D5426275E4872EEB48AE090F77CCAD /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DD55BFA94ADB02B7C49A13DC0AF1C /* Debug.swift */; };
+		E773C1A54E262467066991DA447BB1AE /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E095607B40B14FE4F6672F8BBE970FC4 /* PastelGradient.swift */; };
+		EBB126DE2556F14ECD18C90AFFABE518 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53E32BA30BACA054857E90AB9E6BE4 /* PastelLabel.swift */; };
+		FA2AF1FD419EBA6E7EFEFB3DC78040B5 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487311B9087FE0A136D0A1D25358E02 /* ActionSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A6B40530B0FDC74435BCF3E00656551 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D42DC7F21005DF10871F318716326E5E;
+			remoteInfo = Haptica;
+		};
+		9F38A01E0043E4195A360D534DA29993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223ACB2993ED61193B95A52611ED34E7;
+			remoteInfo = Pastel;
+		};
+		BAEB2FE333208C024B29989F544BA9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73F83E2CAF52E2DF139DF174A93E872C;
+			remoteInfo = Alertift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0475E43F9F68E9F94BD8BF7CCE22AD81 /* Haptica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Haptica.modulemap; sourceTree = "<group>"; };
+		04C70E88CCFAD995EC6DB0C425339EF4 /* Alertift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alertift.swift; path = Sources/Alertift.swift; sourceTree = "<group>"; };
+		0A3B6FE739EE8C172183A09F6B8D49D0 /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hapticable.swift; path = Sources/Hapticable.swift; sourceTree = "<group>"; };
+		18445A1E1CA6876D847215F1C475423E /* Pastel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.debug.xcconfig; sourceTree = "<group>"; };
+		187DD55BFA94ADB02B7C49A13DC0AF1C /* Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debug.swift; path = Sources/Debug.swift; sourceTree = "<group>"; };
+		1D2ABF2DF908153E1EF0D87313E3E3E3 /* Haptica-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-prefix.pch"; sourceTree = "<group>"; };
+		1D60BC9F5933DDF69245C006BED79454 /* Pastel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pastel-Info.plist"; sourceTree = "<group>"; };
+		1FD107E3AC8BB6E09F65A1A791D4C5B5 /* AlertType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertType.swift; path = Sources/AlertType.swift; sourceTree = "<group>"; };
+		261234DA3CD560E4D9DD641428C94B2B /* Haptica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.release.xcconfig; sourceTree = "<group>"; };
+		26C2CF33D598052CF0A74183FBD53C24 /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
+		3487311B9087FE0A136D0A1D25358E02 /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = Sources/ActionSheet.swift; sourceTree = "<group>"; };
+		35722857CB203F06A3B640F120B4BF60 /* Haptica */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haptica; path = Haptica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE788D2C3FD092DFA24A15D2AF35A9A /* Pods-PACReceipts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PACReceipts-Info.plist"; sourceTree = "<group>"; };
+		3B53E32BA30BACA054857E90AB9E6BE4 /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
+		3ECFBFD14D191FA805D9F1A00E6AB739 /* Pods-PACReceipts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PACReceipts-dummy.m"; sourceTree = "<group>"; };
+		3FB1CC81F5E8475125BC4BB59694FDE5 /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		4266EC166F1AE9D0505900B903D14EDA /* Pods-PACReceipts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PACReceipts-acknowledgements.plist"; sourceTree = "<group>"; };
+		463DED0CF7FAEF3AB7D5087668AB5405 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
+		5F71C7F5A8F84219E8610C5FA3A3F14D /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
+		642EF9934F1B1F0B0E88ED0A2E1D6FB8 /* Pods-PACReceipts */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PACReceipts"; path = Pods_PACReceipts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A2394ED6D4E8E26A3280F917BB007A /* InnerAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InnerAlertController.swift; path = Sources/InnerAlertController.swift; sourceTree = "<group>"; };
+		69B4D73B7A81E8E40B19F8634692AF09 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7947F6F5F4DFE87555395F6F33E3B593 /* Pastel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.release.xcconfig; sourceTree = "<group>"; };
+		7E610C78B44977D96BDF73919C52E861 /* Pods-PACReceipts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PACReceipts.release.xcconfig"; sourceTree = "<group>"; };
+		7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84645A96F64ABCFDA720FE013AAEBCC6 /* Haptica-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Haptica-Info.plist"; sourceTree = "<group>"; };
+		885578AAE36451F205C15E0361BE7EE3 /* Alertift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alertift-dummy.m"; sourceTree = "<group>"; };
+		90D7EBF046FBB10D2B58A994E96D0748 /* Haptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptic.swift; path = Sources/Haptic.swift; sourceTree = "<group>"; };
+		94D0DAC1772C34D4A252436B9D84972F /* Alertift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alertift-Info.plist"; sourceTree = "<group>"; };
+		953890EEBA5076DB33DE1680892C6733 /* ActionHandlerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionHandlerBuilder.swift; path = Sources/ActionHandlerBuilder.swift; sourceTree = "<group>"; };
+		9D14634B3D810E7277EDA093D7D20248 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Sources/Alert.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A26F30256855B04C5DF5D66D35F32260 /* Alertift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertift-umbrella.h"; sourceTree = "<group>"; };
+		AB1343881D9AD23B478D3F6E38DE7DE1 /* Pods-PACReceipts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PACReceipts.debug.xcconfig"; sourceTree = "<group>"; };
+		B05C0E55850195BEDEF77C14738BB193 /* Pods-PACReceipts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PACReceipts.modulemap"; sourceTree = "<group>"; };
+		B20D2DF93D65A028F80346FB1B8F9AF3 /* Alertift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertift-prefix.pch"; sourceTree = "<group>"; };
+		C6A280CD5843286561415C7FDF22D13F /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		D026A08D00DAEDE18D782703CA463809 /* Pods-PACReceipts-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PACReceipts-frameworks.sh"; sourceTree = "<group>"; };
+		D0FA80D6159145182DA57745B7B82084 /* Alertift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alertift; path = Alertift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AE86E10F64AB76DD56A02F19C8C80F /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		D4649157DF41CE35C2103C682A16E953 /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
+		D4901DA2DE90F9CCBB76E6B5D47130F1 /* Haptica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.debug.xcconfig; sourceTree = "<group>"; };
+		DAB387A171C8E133DA11A9FB6CF233FE /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
+		DC1FCE20B73EF8EF13C2581C52DBBC37 /* Pods-PACReceipts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PACReceipts-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E095607B40B14FE4F6672F8BBE970FC4 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
+		E5CB6528B1BE43BCD0948A1F948D99D5 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
+		EEEA6E63F979715804F17A868BCB00D3 /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = Sources/Associated.swift; sourceTree = "<group>"; };
+		F0FF81CDB8D5D596B0F6829B62E0354B /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = Sources/Action.swift; sourceTree = "<group>"; };
+		F7321F7E6F9647D7009576249065E639 /* Pods-PACReceipts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PACReceipts-umbrella.h"; sourceTree = "<group>"; };
+		F8674159F4BB9B8805029ECA1EA7D2CD /* Alertift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertift.debug.xcconfig; sourceTree = "<group>"; };
+		FB034D5D128A977B0A0B2AF307B55B6E /* Alertift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertift.release.xcconfig; sourceTree = "<group>"; };
+		FD6705029E69420FE77751195B1C146B /* Alertift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alertift.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A07DD226B2459458E7AD46F7CD98949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9A91D776EEF50375295F27EAA3EEF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABEE1700B229038790D97A17D48226B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57B1491B8E33FF034AAEDBC4370F513 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7342E40D48F8E93F3DC3E48EFC15681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C39CEBBF37BEDEEABF2F77ABBBC6C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9884CBA8A1A6BD45E8F16EA37B2F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD078B96A76E0742C2B961A180A0D95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182EEF967201B5D26E5287D1DBF90E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0FA80D6159145182DA57745B7B82084 /* Alertift */,
+				35722857CB203F06A3B640F120B4BF60 /* Haptica */,
+				7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */,
+				642EF9934F1B1F0B0E88ED0A2E1D6FB8 /* Pods-PACReceipts */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		493F9676A64F8359460A7BDCAB77692B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB387A171C8E133DA11A9FB6CF233FE /* Pastel.modulemap */,
+				C6A280CD5843286561415C7FDF22D13F /* Pastel-dummy.m */,
+				1D60BC9F5933DDF69245C006BED79454 /* Pastel-Info.plist */,
+				3FB1CC81F5E8475125BC4BB59694FDE5 /* Pastel-prefix.pch */,
+				E5CB6528B1BE43BCD0948A1F948D99D5 /* Pastel-umbrella.h */,
+				18445A1E1CA6876D847215F1C475423E /* Pastel.debug.xcconfig */,
+				7947F6F5F4DFE87555395F6F33E3B593 /* Pastel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pastel";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6EAE56E6E58D4F69DD32CE6B7EF8F4F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1B33C84E1BBD70442831A341F6D1DBE /* Alertift */,
+				DC5C2AC7C2F37B08399A4D4E26BD04AF /* Haptica */,
+				A36BCD484FE9746990DEC864245E54D5 /* Pastel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83C10114313733F87F83FD2DE33FC682 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0475E43F9F68E9F94BD8BF7CCE22AD81 /* Haptica.modulemap */,
+				D4649157DF41CE35C2103C682A16E953 /* Haptica-dummy.m */,
+				84645A96F64ABCFDA720FE013AAEBCC6 /* Haptica-Info.plist */,
+				1D2ABF2DF908153E1EF0D87313E3E3E3 /* Haptica-prefix.pch */,
+				26C2CF33D598052CF0A74183FBD53C24 /* Haptica-umbrella.h */,
+				D4901DA2DE90F9CCBB76E6B5D47130F1 /* Haptica.debug.xcconfig */,
+				261234DA3CD560E4D9DD641428C94B2B /* Haptica.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Haptica";
+			sourceTree = "<group>";
+		};
+		87F5A4AEA222963C1AE9D5F0CEA23423 /* Pods-PACReceipts */ = {
+			isa = PBXGroup;
+			children = (
+				B05C0E55850195BEDEF77C14738BB193 /* Pods-PACReceipts.modulemap */,
+				DC1FCE20B73EF8EF13C2581C52DBBC37 /* Pods-PACReceipts-acknowledgements.markdown */,
+				4266EC166F1AE9D0505900B903D14EDA /* Pods-PACReceipts-acknowledgements.plist */,
+				3ECFBFD14D191FA805D9F1A00E6AB739 /* Pods-PACReceipts-dummy.m */,
+				D026A08D00DAEDE18D782703CA463809 /* Pods-PACReceipts-frameworks.sh */,
+				3AE788D2C3FD092DFA24A15D2AF35A9A /* Pods-PACReceipts-Info.plist */,
+				F7321F7E6F9647D7009576249065E639 /* Pods-PACReceipts-umbrella.h */,
+				AB1343881D9AD23B478D3F6E38DE7DE1 /* Pods-PACReceipts.debug.xcconfig */,
+				7E610C78B44977D96BDF73919C52E861 /* Pods-PACReceipts.release.xcconfig */,
+			);
+			name = "Pods-PACReceipts";
+			path = "Target Support Files/Pods-PACReceipts";
+			sourceTree = "<group>";
+		};
+		9DCC1C21DA8A6780C8E09C6CE3EE878A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD6705029E69420FE77751195B1C146B /* Alertift.modulemap */,
+				885578AAE36451F205C15E0361BE7EE3 /* Alertift-dummy.m */,
+				94D0DAC1772C34D4A252436B9D84972F /* Alertift-Info.plist */,
+				B20D2DF93D65A028F80346FB1B8F9AF3 /* Alertift-prefix.pch */,
+				A26F30256855B04C5DF5D66D35F32260 /* Alertift-umbrella.h */,
+				F8674159F4BB9B8805029ECA1EA7D2CD /* Alertift.debug.xcconfig */,
+				FB034D5D128A977B0A0B2AF307B55B6E /* Alertift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alertift";
+			sourceTree = "<group>";
+		};
+		A36BCD484FE9746990DEC864245E54D5 /* Pastel */ = {
+			isa = PBXGroup;
+			children = (
+				E095607B40B14FE4F6672F8BBE970FC4 /* PastelGradient.swift */,
+				3B53E32BA30BACA054857E90AB9E6BE4 /* PastelLabel.swift */,
+				5F71C7F5A8F84219E8610C5FA3A3F14D /* PastelPoint.swift */,
+				463DED0CF7FAEF3AB7D5087668AB5405 /* PastelView.swift */,
+				493F9676A64F8359460A7BDCAB77692B /* Support Files */,
+			);
+			name = Pastel;
+			path = Pastel;
+			sourceTree = "<group>";
+		};
+		C51F9CACE3780BF40D41AF974D46B975 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87F5A4AEA222963C1AE9D5F0CEA23423 /* Pods-PACReceipts */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6EAE56E6E58D4F69DD32CE6B7EF8F4F7 /* Pods */,
+				182EEF967201B5D26E5287D1DBF90E2D /* Products */,
+				C51F9CACE3780BF40D41AF974D46B975 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC5C2AC7C2F37B08399A4D4E26BD04AF /* Haptica */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA6E63F979715804F17A868BCB00D3 /* Associated.swift */,
+				D1AE86E10F64AB76DD56A02F19C8C80F /* Extensions.swift */,
+				90D7EBF046FBB10D2B58A994E96D0748 /* Haptic.swift */,
+				0A3B6FE739EE8C172183A09F6B8D49D0 /* Hapticable.swift */,
+				69B4D73B7A81E8E40B19F8634692AF09 /* Pattern.swift */,
+				83C10114313733F87F83FD2DE33FC682 /* Support Files */,
+			);
+			name = Haptica;
+			path = Haptica;
+			sourceTree = "<group>";
+		};
+		E1B33C84E1BBD70442831A341F6D1DBE /* Alertift */ = {
+			isa = PBXGroup;
+			children = (
+				F0FF81CDB8D5D596B0F6829B62E0354B /* Action.swift */,
+				953890EEBA5076DB33DE1680892C6733 /* ActionHandlerBuilder.swift */,
+				3487311B9087FE0A136D0A1D25358E02 /* ActionSheet.swift */,
+				9D14634B3D810E7277EDA093D7D20248 /* Alert.swift */,
+				04C70E88CCFAD995EC6DB0C425339EF4 /* Alertift.swift */,
+				1FD107E3AC8BB6E09F65A1A791D4C5B5 /* AlertType.swift */,
+				187DD55BFA94ADB02B7C49A13DC0AF1C /* Debug.swift */,
+				67A2394ED6D4E8E26A3280F917BB007A /* InnerAlertController.swift */,
+				9DCC1C21DA8A6780C8E09C6CE3EE878A /* Support Files */,
+			);
+			name = Alertift;
+			path = Alertift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		35125F8D6C171A57701676142AF46F05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DE2D714506964B688948D2CAE10C62B /* Alertift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CAA38D768F2617E0AF34B23D18A2F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D1C292F1DA8209A17267A859E6BDF6 /* Pastel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62D5EA2BEFC7E0BC9566B947E04C092 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7EFB98144B65EC97C765DD4C2B33D2 /* Pods-PACReceipts-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9204FE5F39B2C1E1109378A2603FA25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6664605047A0763FFE25EFE65E92E9 /* Haptica-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		223ACB2993ED61193B95A52611ED34E7 /* Pastel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391D83321B48768745DD4E3C7A72FD5E /* Build configuration list for PBXNativeTarget "Pastel" */;
+			buildPhases = (
+				55CAA38D768F2617E0AF34B23D18A2F6 /* Headers */,
+				6E9C48196C1237912646C55E2762EB0B /* Sources */,
+				B7342E40D48F8E93F3DC3E48EFC15681 /* Frameworks */,
+				9C69B2C722948927A85ACC0EB0D41767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pastel;
+			productName = Pastel;
+			productReference = 7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel */;
+			productType = "com.apple.product-type.framework";
+		};
+		73F83E2CAF52E2DF139DF174A93E872C /* Alertift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFEA57D5F1E0AC69B1D100477AB3B7F0 /* Build configuration list for PBXNativeTarget "Alertift" */;
+			buildPhases = (
+				35125F8D6C171A57701676142AF46F05 /* Headers */,
+				F7C0AEDF946EDDA8A7CBD3695F60A56C /* Sources */,
+				1A07DD226B2459458E7AD46F7CD98949 /* Frameworks */,
+				5544B948C0E804D01575636D7B081E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alertift;
+			productName = Alertift;
+			productReference = D0FA80D6159145182DA57745B7B82084 /* Alertift */;
+			productType = "com.apple.product-type.framework";
+		};
+		D42DC7F21005DF10871F318716326E5E /* Haptica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B58649BDA3F20AF69398ABCF8F5DE0F /* Build configuration list for PBXNativeTarget "Haptica" */;
+			buildPhases = (
+				D9204FE5F39B2C1E1109378A2603FA25 /* Headers */,
+				B4BAB19F09F870961E9DE21A1C72E51F /* Sources */,
+				ABEE1700B229038790D97A17D48226B7 /* Frameworks */,
+				6D93173373F75FEAE75DC9BE6D89ADE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Haptica;
+			productName = Haptica;
+			productReference = 35722857CB203F06A3B640F120B4BF60 /* Haptica */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3EBCF1503C0678ABEB0D4901FB4DC97 /* Pods-PACReceipts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F07A8216CAB93395C205F87CD1D3149 /* Build configuration list for PBXNativeTarget "Pods-PACReceipts" */;
+			buildPhases = (
+				C62D5EA2BEFC7E0BC9566B947E04C092 /* Headers */,
+				75414C446CAF9ABDE5673A34C7ED6C00 /* Sources */,
+				EF9884CBA8A1A6BD45E8F16EA37B2F9A /* Frameworks */,
+				0C9A11BA8A09619D42D028F6EA9E9F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D5F4CCBD1FB878238FD8233A7542F88 /* PBXTargetDependency */,
+				C299FB9B0B307B5751D9CFE402D081B3 /* PBXTargetDependency */,
+				643AEBF6FB805EB2483A6BEB25C336F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-PACReceipts";
+			productName = Pods_PACReceipts;
+			productReference = 642EF9934F1B1F0B0E88ED0A2E1D6FB8 /* Pods-PACReceipts */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 182EEF967201B5D26E5287D1DBF90E2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73F83E2CAF52E2DF139DF174A93E872C /* Alertift */,
+				D42DC7F21005DF10871F318716326E5E /* Haptica */,
+				223ACB2993ED61193B95A52611ED34E7 /* Pastel */,
+				E3EBCF1503C0678ABEB0D4901FB4DC97 /* Pods-PACReceipts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C9A11BA8A09619D42D028F6EA9E9F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5544B948C0E804D01575636D7B081E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D93173373F75FEAE75DC9BE6D89ADE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C69B2C722948927A85ACC0EB0D41767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E9C48196C1237912646C55E2762EB0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3D1FE2B71A8A95050F50DA05CAC9E6 /* Pastel-dummy.m in Sources */,
+				E773C1A54E262467066991DA447BB1AE /* PastelGradient.swift in Sources */,
+				EBB126DE2556F14ECD18C90AFFABE518 /* PastelLabel.swift in Sources */,
+				78E291B68E2A7A10F9B587AD4481CADB /* PastelPoint.swift in Sources */,
+				341CA286FB94ACD84B287E9C230EEE14 /* PastelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75414C446CAF9ABDE5673A34C7ED6C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933D4EA5DF151CDE10E60690ED3ECDC /* Pods-PACReceipts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BAB19F09F870961E9DE21A1C72E51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A7F71351E825C0C089BFEE5B99405A /* Associated.swift in Sources */,
+				2CE6B63E1925C6F9D659AD6A491CD30D /* Extensions.swift in Sources */,
+				0FA97BDD0DD156174A6AA156068A16FB /* Haptic.swift in Sources */,
+				86946017E01A10289D7F31C0E5E0C8A6 /* Haptica-dummy.m in Sources */,
+				D326F850E1E5F1DFCB35377D28E7F89B /* Hapticable.swift in Sources */,
+				0F3D71986551CD8FB502F9364912232D /* Pattern.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C0AEDF946EDDA8A7CBD3695F60A56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B278B10F0B7DAAF6C64459B1E259410 /* Action.swift in Sources */,
+				A96C3D499D9A5D322C7E512DDF32B912 /* ActionHandlerBuilder.swift in Sources */,
+				FA2AF1FD419EBA6E7EFEFB3DC78040B5 /* ActionSheet.swift in Sources */,
+				DAB18D936A2A0B77BDC579B99AA612C1 /* Alert.swift in Sources */,
+				BF44FF19FBE1E073BF47F57FA17E6532 /* Alertift.swift in Sources */,
+				E56A2908523DF14CA3FDDF867E5B759C /* Alertift-dummy.m in Sources */,
+				9F1CB576D6C8D3D619A8D4BA1931B856 /* AlertType.swift in Sources */,
+				E5D5426275E4872EEB48AE090F77CCAD /* Debug.swift in Sources */,
+				15CD915BCF89E46681099D1E2721C435 /* InnerAlertController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D5F4CCBD1FB878238FD8233A7542F88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alertift;
+			target = 73F83E2CAF52E2DF139DF174A93E872C /* Alertift */;
+			targetProxy = BAEB2FE333208C024B29989F544BA9B1 /* PBXContainerItemProxy */;
+		};
+		643AEBF6FB805EB2483A6BEB25C336F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pastel;
+			target = 223ACB2993ED61193B95A52611ED34E7 /* Pastel */;
+			targetProxy = 9F38A01E0043E4195A360D534DA29993 /* PBXContainerItemProxy */;
+		};
+		C299FB9B0B307B5751D9CFE402D081B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haptica;
+			target = D42DC7F21005DF10871F318716326E5E /* Haptica */;
+			targetProxy = 9A6B40530B0FDC74435BCF3E00656551 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C164A246D0DFB9AD34B04E4573F6A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB1343881D9AD23B478D3F6E38DE7DE1 /* Pods-PACReceipts.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36109D1F95E26F56D59DA3649F63D07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18445A1E1CA6876D847215F1C475423E /* Pastel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		369A3BDCA3AADCE19F6956D0B5FBC4FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7947F6F5F4DFE87555395F6F33E3B593 /* Pastel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		734E39DB34E8C34E41A3581D71742741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB034D5D128A977B0A0B2AF307B55B6E /* Alertift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alertift/Alertift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alertift/Alertift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alertift/Alertift.modulemap";
+				PRODUCT_MODULE_NAME = Alertift;
+				PRODUCT_NAME = Alertift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C3FBC45C4966EFE20583918767EFBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9C584BDD16963140FE7DF04B14A31278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E610C78B44977D96BDF73919C52E861 /* Pods-PACReceipts.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5F6D66998940E592E09422FD8683006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4901DA2DE90F9CCBB76E6B5D47130F1 /* Haptica.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Haptica/Haptica-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Haptica/Haptica-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Haptica/Haptica.modulemap";
+				PRODUCT_MODULE_NAME = Haptica;
+				PRODUCT_NAME = Haptica;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D075AAA2639700CED9925DE81CEEF8B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 261234DA3CD560E4D9DD641428C94B2B /* Haptica.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Haptica/Haptica-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Haptica/Haptica-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Haptica/Haptica.modulemap";
+				PRODUCT_MODULE_NAME = Haptica;
+				PRODUCT_NAME = Haptica;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF0A36149038A192FFD678E1D4A40D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FF18D43449CCF2E47D43D1331DE7E78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8674159F4BB9B8805029ECA1EA7D2CD /* Alertift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alertift/Alertift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alertift/Alertift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alertift/Alertift.modulemap";
+				PRODUCT_MODULE_NAME = Alertift;
+				PRODUCT_NAME = Alertift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		391D83321B48768745DD4E3C7A72FD5E /* Build configuration list for PBXNativeTarget "Pastel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36109D1F95E26F56D59DA3649F63D07A /* Debug */,
+				369A3BDCA3AADCE19F6956D0B5FBC4FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FBC45C4966EFE20583918767EFBE2 /* Debug */,
+				FF0A36149038A192FFD678E1D4A40D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B58649BDA3F20AF69398ABCF8F5DE0F /* Build configuration list for PBXNativeTarget "Haptica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F6D66998940E592E09422FD8683006 /* Debug */,
+				D075AAA2639700CED9925DE81CEEF8B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F07A8216CAB93395C205F87CD1D3149 /* Build configuration list for PBXNativeTarget "Pods-PACReceipts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C164A246D0DFB9AD34B04E4573F6A3A /* Debug */,
+				9C584BDD16963140FE7DF04B14A31278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFEA57D5F1E0AC69B1D100477AB3B7F0 /* Build configuration list for PBXNativeTarget "Alertift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF18D43449CCF2E47D43D1331DE7E78F /* Debug */,
+				734E39DB34E8C34E41A3581D71742741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
