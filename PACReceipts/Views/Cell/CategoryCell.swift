@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 
-class TextCell: UICollectionViewCell {
+class CategoryCell: UICollectionViewCell {
     let label = UILabel()
     static let reuseIdentifier = "text-cell-reuse-identifier"
 
@@ -23,12 +23,16 @@ class TextCell: UICollectionViewCell {
 
 }
 
-extension TextCell {
+extension CategoryCell {
     func configure() {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.adjustsFontForContentSizeCategory = true
-        contentView.addSubview(label)
+        label.textAlignment = .center
         label.font = UIFont.preferredFont(forTextStyle: .caption1)
+        contentView.layer.borderColor = UIColor.systemGray.cgColor
+        contentView.layer.borderWidth = 1
+        contentView.layer.cornerRadius = 20
+        contentView.addSubview(label)
         let inset = CGFloat(10)
         NSLayoutConstraint.activate([
             label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: inset),
