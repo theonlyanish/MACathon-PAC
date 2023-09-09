@@ -2,6 +2,7 @@ import UIKit
 
 class MonthCell: UICollectionViewCell {
     let label = UILabel()
+    
     static let reuseIdentifier = "month-cell-reuse-identifier"
 
     override init(frame: CGRect) {

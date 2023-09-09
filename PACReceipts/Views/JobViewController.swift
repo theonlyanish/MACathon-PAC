@@ -84,6 +84,10 @@ class JobViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         super.viewDidLoad()
         setupBackground()
         setupUI()
+        if let savedDescription = UserDefaults.standard.string(forKey: "JobDescription") {
+            jobDescriptionTextField.text = savedDescription
+        }
+
         
       
 
@@ -146,7 +150,8 @@ class JobViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         jobTextField.delegate = self
         jobPicker.dataSource = self
         jobPicker.delegate = self
-        
+        jobDescriptionTextField.delegate = self
+
         jobTextField.inputView = jobPicker
         
         NSLayoutConstraint.activate([
@@ -232,6 +237,24 @@ class JobViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField == jobDescriptionTextField {
+            guard let description = textField.text, description.count <= 100 else {
+                // Show an alert if the description exceeds 100 characters
+                let alert = UIAlertController(title: "Error", message: "Job description should be up to 100 characters only.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
+                return false
+            }
+            
+            // Save the job description to UserDefaults
+            UserDefaults.standard.set(description, forKey: "JobDescription")
+        }
+        
+        return true
+    }
+
     
     
     
