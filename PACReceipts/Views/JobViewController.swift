@@ -154,6 +154,12 @@ class JobViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
     }
 
     @IBAction func nextBtnClicked(_ sender: UIButton) {
-        // ... [Your nextBtnClicked code remains unchanged] ...
+        
+        let controller = storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+         controller.modalPresentationStyle = .fullScreen
+         controller.modalTransitionStyle = .flipHorizontal
+         UserDefaults.standard.hasOnboarded = true
+         present(controller, animated: true, completion: nil)
+        
     }
 }

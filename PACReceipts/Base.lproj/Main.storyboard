@@ -11,7 +11,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="PACReceipts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="PACReceipts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                 <rect key="frame" x="140" y="694" width="113" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Started"/>
                                 <connections>
                                     <segue destination="qHt-MG-tWC" kind="presentation" modalPresentationStyle="fullScreen" id="AOf-WY-zm9"/>
                                 </connections>
@@ -56,7 +56,7 @@
                                 <rect key="frame" x="140" y="698" width="113" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="qHt-MG-tWC" eventType="touchDown" id="0XM-1r-gLc"/>
                                 </connections>
@@ -130,7 +130,7 @@
                                 <rect key="frame" x="140" y="700" width="113" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
                                     <segue destination="1UU-92-e7o" kind="presentation" modalPresentationStyle="fullScreen" id="1G2-jB-Yd8"/>
                                 </connections>
@@ -154,6 +154,17 @@
                     <view key="view" contentMode="scaleToFill" id="qdY-lf-hzd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZ0-Wn-hcv">
+                                <rect key="frame" x="140" y="703" width="113" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Started"/>
+                                <connections>
+                                    <action selector="nextBtnClicked:" destination="1UU-92-e7o" eventType="touchDown" id="w0u-wQ-Ua0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6wo-Iw-ep7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -229,7 +240,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="7Ho-ub-cdH">
             <objects>
-                <tabBarController id="4oN-yk-DH4" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="4oN-yk-DH4" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="12U-DS-58a"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hWL-hA-7DA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
