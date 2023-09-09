@@ -1,24 +1,32 @@
 PODS:
   - Alertift (4.2.0)
+  - ChatGPTSwift (1.3.1):
+    - GPTEncoder (= 1.0.0)
+  - GPTEncoder (1.0.0)
   - Haptica (3.0.3)
   - Pastel (0.6.0)
 
 DEPENDENCIES:
   - Alertift (~> 4.2)
+  - ChatGPTSwift (~> 1.3.1)
   - Haptica
   - Pastel
 
 SPEC REPOS:
   trunk:
     - Alertift
+    - ChatGPTSwift
+    - GPTEncoder
     - Haptica
     - Pastel
 
 SPEC CHECKSUMS:
   Alertift: 17b37be915cd28edeceabd438e4134d041ea825c
+  ChatGPTSwift: 37a1d90b9b8af621618b0abd92cf8ac39eccee59
+  GPTEncoder: 67d0f61b0ef846cea92d7a9e4d4063beb8cd7227
   Haptica: 23497230b2d7476621f7860263ae0667279a0a89
   Pastel: 814f081efbe2859c37e65ee44f396e6e5be88619
 
-PODFILE CHECKSUM: 36bef08538e87dc810c55365d872a7b723f3191b
+PODFILE CHECKSUM: 45e8dfeb463b38d87fbc6300e95494167e36c347
 
 COCOAPODS: 1.12.1

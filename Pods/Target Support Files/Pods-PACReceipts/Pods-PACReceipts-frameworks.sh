@@ -177,11 +177,15 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alertift/Alertift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ChatGPTSwift/ChatGPTSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GPTEncoder/GPTEncoder.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alertift/Alertift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ChatGPTSwift/ChatGPTSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GPTEncoder/GPTEncoder.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework"
 fi
