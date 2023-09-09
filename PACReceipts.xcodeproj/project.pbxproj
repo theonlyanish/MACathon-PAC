@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04242F487183B7F611F158D5 /* Pods_PACReceipts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD7A482F6710A5045776EC4 /* Pods_PACReceipts.framework */; };
+		840D54452AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */; };
+		840D54472AACFB6C00D4DF3E /* ReceiptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */; };
 		842E95BD2AAC865A00A1C837 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95BC2AAC865A00A1C837 /* CategoryCell.swift */; };
 		842E95BF2AAC96DC00A1C837 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95BE2AAC96DC00A1C837 /* MonthCell.swift */; };
+		842E95C12AACCD4900A1C837 /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95C02AACCD4900A1C837 /* TextRecognition.swift */; };
+		842E95C32AACCF2000A1C837 /* MetaDataExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95C22AACCF2000A1C837 /* MetaDataExtractor.swift */; };
 		847D03F92AAC3436004AC0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D03F82AAC3436004AC0FC /* AppDelegate.swift */; };
 		847D03FB2AAC3436004AC0FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D03FA2AAC3436004AC0FC /* SceneDelegate.swift */; };
 		847D03FD2AAC3436004AC0FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D03FC2AAC3436004AC0FC /* MainViewController.swift */; };
@@ -20,6 +23,7 @@
 		847D041A2AAC3439004AC0FC /* PACReceiptsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D04192AAC3439004AC0FC /* PACReceiptsUITests.swift */; };
 		847D041C2AAC3439004AC0FC /* PACReceiptsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D041B2AAC3439004AC0FC /* PACReceiptsUITestsLaunchTests.swift */; };
 		84E1CB592AAC851700AD75D4 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CB582AAC851700AD75D4 /* UIViewController + Extension.swift */; };
+		8568C9B72F3514BDF96A3703 /* Pods_PACReceipts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3122A5D7F55D71FCCE001E2F /* Pods_PACReceipts.framework */; };
 		F879B8562AAC5FC600992A57 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879B8552AAC5FC600992A57 /* OnboardingViewController.swift */; };
 		F879B8582AAC68DB00992A57 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879B8572AAC68DB00992A57 /* NameViewController.swift */; };
 		F879B85A2AAC692A00992A57 /* StartupScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879B8592AAC692A00992A57 /* StartupScreenController.swift */; };
@@ -45,11 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2640F3D9DC75CF6076901BCD /* Pods-PACReceipts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACReceipts.release.xcconfig"; path = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.release.xcconfig"; sourceTree = "<group>"; };
-		32A072BD27DC5EF99B2A5E8C /* Pods-PACReceipts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACReceipts.debug.xcconfig"; path = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.debug.xcconfig"; sourceTree = "<group>"; };
-		6BD7A482F6710A5045776EC4 /* Pods_PACReceipts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PACReceipts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10E1BDABCB05F1F3E3FF0880 /* Pods-PACReceipts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACReceipts.debug.xcconfig"; path = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.debug.xcconfig"; sourceTree = "<group>"; };
+		3122A5D7F55D71FCCE001E2F /* Pods_PACReceipts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PACReceipts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadSuccessViewController.swift; sourceTree = "<group>"; };
+		840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsViewController.swift; sourceTree = "<group>"; };
 		842E95BC2AAC865A00A1C837 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		842E95BE2AAC96DC00A1C837 /* MonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
+		842E95C02AACCD4900A1C837 /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecognition.swift; path = PACReceipts/Views/Cell/TextRecognition.swift; sourceTree = SOURCE_ROOT; };
+		842E95C22AACCF2000A1C837 /* MetaDataExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MetaDataExtractor.swift; path = PACReceipts/Views/Cell/MetaDataExtractor.swift; sourceTree = SOURCE_ROOT; };
 		847D03F52AAC3436004AC0FC /* PACReceipts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PACReceipts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D03F82AAC3436004AC0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847D03FA2AAC3436004AC0FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +76,7 @@
 		F879B8592AAC692A00992A57 /* StartupScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupScreenController.swift; sourceTree = "<group>"; };
 		F879B85B2AAC695D00992A57 /* JobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
 		F879B85E2AAC6BBD00992A57 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		FB75DD23EA1F1A459842B61F /* Pods-PACReceipts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACReceipts.release.xcconfig"; path = "Target Support Files/Pods-PACReceipts/Pods-PACReceipts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04242F487183B7F611F158D5 /* Pods_PACReceipts.framework in Frameworks */,
+				8568C9B72F3514BDF96A3703 /* Pods_PACReceipts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +122,7 @@
 				847D04182AAC3439004AC0FC /* PACReceiptsUITests */,
 				847D03F62AAC3436004AC0FC /* Products */,
 				C937B82F030A76CA6D0A5102 /* Pods */,
-				C9B8479DFA2C643098D00224 /* Frameworks */,
+				E7F42D1F531E2FB8EBFC6A87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +146,8 @@
 				847D03F82AAC3436004AC0FC /* AppDelegate.swift */,
 				847D03FA2AAC3436004AC0FC /* SceneDelegate.swift */,
 				847D03FC2AAC3436004AC0FC /* MainViewController.swift */,
+				840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */,
+				840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */,
 				847D03FE2AAC3436004AC0FC /* Main.storyboard */,
 				847D04032AAC3439004AC0FC /* LaunchScreen.storyboard */,
 				847D04012AAC3439004AC0FC /* Assets.xcassets */,
@@ -173,6 +183,8 @@
 		847D04292AAC3686004AC0FC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				842E95C02AACCD4900A1C837 /* TextRecognition.swift */,
+				842E95C22AACCF2000A1C837 /* MetaDataExtractor.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -180,16 +192,16 @@
 		C937B82F030A76CA6D0A5102 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				32A072BD27DC5EF99B2A5E8C /* Pods-PACReceipts.debug.xcconfig */,
-				2640F3D9DC75CF6076901BCD /* Pods-PACReceipts.release.xcconfig */,
+				10E1BDABCB05F1F3E3FF0880 /* Pods-PACReceipts.debug.xcconfig */,
+				FB75DD23EA1F1A459842B61F /* Pods-PACReceipts.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C9B8479DFA2C643098D00224 /* Frameworks */ = {
+		E7F42D1F531E2FB8EBFC6A87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6BD7A482F6710A5045776EC4 /* Pods_PACReceipts.framework */,
+				3122A5D7F55D71FCCE001E2F /* Pods_PACReceipts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,11 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847D041F2AAC3439004AC0FC /* Build configuration list for PBXNativeTarget "PACReceipts" */;
 			buildPhases = (
-				F7D9ADC69613C6EF1446D932 /* [CP] Check Pods Manifest.lock */,
+				499F8A2B981C37C3555D38A0 /* [CP] Check Pods Manifest.lock */,
 				847D03F12AAC3436004AC0FC /* Sources */,
 				847D03F22AAC3436004AC0FC /* Frameworks */,
 				847D03F32AAC3436004AC0FC /* Resources */,
-				DC29363A70FF56BF9AB6CE57 /* [CP] Embed Pods Frameworks */,
+				868016FF5810B204CAD2A22E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,24 +356,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DC29363A70FF56BF9AB6CE57 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PACReceipts/Pods-PACReceipts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PACReceipts/Pods-PACReceipts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PACReceipts/Pods-PACReceipts-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7D9ADC69613C6EF1446D932 /* [CP] Check Pods Manifest.lock */ = {
+		499F8A2B981C37C3555D38A0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,6 +378,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		868016FF5810B204CAD2A22E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PACReceipts/Pods-PACReceipts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PACReceipts/Pods-PACReceipts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PACReceipts/Pods-PACReceipts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -397,9 +409,13 @@
 				847D03F92AAC3436004AC0FC /* AppDelegate.swift in Sources */,
 				84E1CB592AAC851700AD75D4 /* UIViewController + Extension.swift in Sources */,
 				847D03FB2AAC3436004AC0FC /* SceneDelegate.swift in Sources */,
+				840D54452AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift in Sources */,
 				F879B85A2AAC692A00992A57 /* StartupScreenController.swift in Sources */,
 				F879B8562AAC5FC600992A57 /* OnboardingViewController.swift in Sources */,
+				840D54472AACFB6C00D4DF3E /* ReceiptsViewController.swift in Sources */,
+				842E95C32AACCF2000A1C837 /* MetaDataExtractor.swift in Sources */,
 				842E95BF2AAC96DC00A1C837 /* MonthCell.swift in Sources */,
+				842E95C12AACCD4900A1C837 /* TextRecognition.swift in Sources */,
 				F879B8582AAC68DB00992A57 /* NameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,7 +588,7 @@
 		};
 		847D04202AAC3439004AC0FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32A072BD27DC5EF99B2A5E8C /* Pods-PACReceipts.debug.xcconfig */;
+			baseConfigurationReference = 10E1BDABCB05F1F3E3FF0880 /* Pods-PACReceipts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -601,7 +617,7 @@
 		};
 		847D04212AAC3439004AC0FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2640F3D9DC75CF6076901BCD /* Pods-PACReceipts.release.xcconfig */;
+			baseConfigurationReference = FB75DD23EA1F1A459842B61F /* Pods-PACReceipts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
