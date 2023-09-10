@@ -8,7 +8,7 @@
 import Foundation
 import ChatGPTSwift
 
-let openAIKey = "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"
+let openAIKey = "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"
 let api  = ChatGPTAPI(apiKey: openAIKey)
 
 func getOCRMetaData(from ocrText: String , categories: [String] , occupation: String)  async -> OCRMetaData?  {

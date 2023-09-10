@@ -19,6 +19,8 @@
 		840D545D2AAD44B000D4DF3E /* ReceiptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D545C2AAD44B000D4DF3E /* ReceiptStore.swift */; };
 		840D545F2AAD541500D4DF3E /* UIImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D545E2AAD541500D4DF3E /* UIImageTransformer.swift */; };
 		840D54612AAD653C00D4DF3E /* MonthCellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54602AAD653C00D4DF3E /* MonthCellDataModel.swift */; };
+		840D54632AAD992400D4DF3E /* TaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54622AAD992400D4DF3E /* TaxViewController.swift */; };
+		840D54652AADA17200D4DF3E /* TaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54642AADA17200D4DF3E /* TaxCell.swift */; };
 		842E95BD2AAC865A00A1C837 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95BC2AAC865A00A1C837 /* CategoryCell.swift */; };
 		842E95BF2AAC96DC00A1C837 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95BE2AAC96DC00A1C837 /* MonthCell.swift */; };
 		842E95C12AACCD4900A1C837 /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95C02AACCD4900A1C837 /* TextRecognition.swift */; };
@@ -73,6 +75,8 @@
 		840D545C2AAD44B000D4DF3E /* ReceiptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptStore.swift; sourceTree = "<group>"; };
 		840D545E2AAD541500D4DF3E /* UIImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTransformer.swift; sourceTree = "<group>"; };
 		840D54602AAD653C00D4DF3E /* MonthCellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCellDataModel.swift; sourceTree = "<group>"; };
+		840D54622AAD992400D4DF3E /* TaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxViewController.swift; sourceTree = "<group>"; };
+		840D54642AADA17200D4DF3E /* TaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCell.swift; sourceTree = "<group>"; };
 		842E95BC2AAC865A00A1C837 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		842E95BE2AAC96DC00A1C837 /* MonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
 		842E95C02AACCD4900A1C837 /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecognition.swift; path = PACReceipts/Views/Cell/TextRecognition.swift; sourceTree = SOURCE_ROOT; };
@@ -131,6 +135,7 @@
 			children = (
 				842E95BC2AAC865A00A1C837 /* CategoryCell.swift */,
 				842E95BE2AAC96DC00A1C837 /* MonthCell.swift */,
+				840D54642AADA17200D4DF3E /* TaxCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				847D03FC2AAC3436004AC0FC /* MainViewController.swift */,
 				840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */,
 				840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */,
+				840D54622AAD992400D4DF3E /* TaxViewController.swift */,
 				847D03FE2AAC3436004AC0FC /* Main.storyboard */,
 				847D04032AAC3439004AC0FC /* LaunchScreen.storyboard */,
 				847D04012AAC3439004AC0FC /* Assets.xcassets */,
@@ -436,9 +442,11 @@
 				842E95BD2AAC865A00A1C837 /* CategoryCell.swift in Sources */,
 				847D03FD2AAC3436004AC0FC /* MainViewController.swift in Sources */,
 				840D545F2AAD541500D4DF3E /* UIImageTransformer.swift in Sources */,
+				840D54632AAD992400D4DF3E /* TaxViewController.swift in Sources */,
 				840D54552AAD37D500D4DF3E /* ReceiptModel.xcdatamodeld in Sources */,
 				F879B85C2AAC695D00992A57 /* JobViewController.swift in Sources */,
 				F879B85F2AAC6BBD00992A57 /* UserDefaults+Extensions.swift in Sources */,
+				840D54652AADA17200D4DF3E /* TaxCell.swift in Sources */,
 				847D03F92AAC3436004AC0FC /* AppDelegate.swift in Sources */,
 				84E1CB592AAC851700AD75D4 /* UIViewController + Extension.swift in Sources */,
 				840D544B2AAD24B600D4DF3E /* ProfileViewController.swift in Sources */,
