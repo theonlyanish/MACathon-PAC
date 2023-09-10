@@ -78,7 +78,7 @@ class JobViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         return picker
     }()
     
-    let jobOptions = ["Doctor", "Lawyer", "Engineer", "Teacher", "Student"]
+    let jobOptions = Job.jobOptions
     
     override func viewDidLoad() {
         super.viewDidLoad()

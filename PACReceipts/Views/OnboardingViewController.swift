@@ -11,7 +11,7 @@ import SwiftUI
 import Pastel
 
 class OnboardingViewController: UIViewController {
-    
+    var store: ReceiptStore!
     // UI Elements
     let titleLabel: UILabel = {
         let label = UILabel()

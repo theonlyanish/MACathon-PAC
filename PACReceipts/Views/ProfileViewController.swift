@@ -40,7 +40,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         return picker
     }()
     
-    private let jobOptions = ["Doctor", "Lawyer", "Engineer", "Teacher", "Student"]
+    private let jobOptions = Job.jobOptions
     private var isEditingProfile = false
     
     private let jobDescriptionLabel: UILabel = {
@@ -98,20 +98,6 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         if let savedJob = UserDefaults.standard.string(forKey: "SelectedJob") {
             jobTitleLabel.text = savedJob
-            
-            // For Kent - Use this for categories or whatever
-            var expenseCategories: [String] = []
-            if savedJob == "Freelance Writer/Author" {
-                expenseCategories = ["Home Office", "Computer and Software", "Books and Research Materials", "Travel", "Professional Development"]
-            } else if savedJob == "Construction Worker" {
-                expenseCategories = ["Tools and Equipment", "Protective Gear", "Union Fees", "Travel", "Licenses and Courses"]
-            } else if savedJob == "Real Estate Agent" {
-                expenseCategories = ["Travel", "Advertising", "Phone and Internet", "Professional Development", "Home Office"]
-            } else if savedJob == "Musician" {
-                expenseCategories = ["Instruments", "Music Sheets and Copyrights", "Promotion", "Travel", "Professional Development"]
-            } else if savedJob == "Fitness Instructor" {
-                expenseCategories = ["Sporting Equipment", "Uniforms", "Professional Development", "Music and Choreography", "Travel"]
-            }
         }
         
         if let savedJobDescription = UserDefaults.standard.string(forKey: "JobDescription") {
@@ -121,6 +107,8 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     }
     
     private func saveData() {
+        Job.job = jobTitleLabel.text!
+        print(Job.job , Job.expenseCategories)
         UserDefaults.standard.set(nameTextField.text, forKey: "Name")
         UserDefaults.standard.set(jobTitleLabel.text, forKey: "SelectedJob")
         UserDefaults.standard.set(jobDescriptionTextField.text, forKey: "JobDescription")
