@@ -4,3 +4,6 @@ PACReceipts.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserst
 PACReceipts.xcodeproj/xcuserdata/anish.xcuserdatad/xcschemes/xcschememanagement.plist
 Pods/Pods.xcodeproj/xcuserdata/anish.xcuserdatad/xcschemes/xcschememanagement.plist
 *.xcuserstate
+PACReceipts/Info.plist
+PACReceipts/Views/Cell/MetaDataExtractor.swift
+PACReceipts.xcodeproj/project.pbxproj
