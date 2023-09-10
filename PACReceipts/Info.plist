@@ -4,6 +4,8 @@
 <dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>need access to the photo library to save scanned documents</string>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>We need access to your Downloads folder to save tax receipts.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>need access to the camera to scan documents</string>
 	<key>UIApplicationSceneManifest</key>
