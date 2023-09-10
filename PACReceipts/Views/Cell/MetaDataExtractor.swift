@@ -11,14 +11,6 @@ import ChatGPTSwift
 let openAIKey = "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"
 let api  = ChatGPTAPI(apiKey: openAIKey)
 
-struct OCRMetaData: Codable {
-    let totalAmount: Float?
-    let category: String?
-    let isTaxDeductible: Bool?
-    let date: String?
-    let name: String?
-}
-
 func getOCRMetaData(from ocrText: String , categories: [String] , occupation: String)  async -> OCRMetaData?  {
     let systext = """
         Your client works as \(occupation)

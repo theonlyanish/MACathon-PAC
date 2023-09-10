@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		840D54452AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */; };
 		840D54472AACFB6C00D4DF3E /* ReceiptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */; };
+		840D54492AAD238700D4DF3E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840D54482AAD238700D4DF3E /* CoreData.framework */; };
+		840D544B2AAD24B600D4DF3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D544A2AAD24B600D4DF3E /* ProfileViewController.swift */; };
+		840D544D2AAD270B00D4DF3E /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D544C2AAD270B00D4DF3E /* Job.swift */; };
+		840D544F2AAD347E00D4DF3E /* OCRMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D544E2AAD347E00D4DF3E /* OCRMetaData.swift */; };
+		840D54552AAD37D500D4DF3E /* ReceiptModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840D54532AAD37D500D4DF3E /* ReceiptModel.xcdatamodeld */; };
+		840D545A2AAD421800D4DF3E /* Receipt+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54582AAD421800D4DF3E /* Receipt+CoreDataClass.swift */; };
+		840D545B2AAD421800D4DF3E /* Receipt+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54592AAD421800D4DF3E /* Receipt+CoreDataProperties.swift */; };
+		840D545D2AAD44B000D4DF3E /* ReceiptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D545C2AAD44B000D4DF3E /* ReceiptStore.swift */; };
+		840D545F2AAD541500D4DF3E /* UIImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D545E2AAD541500D4DF3E /* UIImageTransformer.swift */; };
+		840D54612AAD653C00D4DF3E /* MonthCellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D54602AAD653C00D4DF3E /* MonthCellDataModel.swift */; };
 		842E95BD2AAC865A00A1C837 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95BC2AAC865A00A1C837 /* CategoryCell.swift */; };
 		842E95BF2AAC96DC00A1C837 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95BE2AAC96DC00A1C837 /* MonthCell.swift */; };
 		842E95C12AACCD4900A1C837 /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E95C02AACCD4900A1C837 /* TextRecognition.swift */; };
@@ -53,6 +63,16 @@
 		3122A5D7F55D71FCCE001E2F /* Pods_PACReceipts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PACReceipts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D54442AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadSuccessViewController.swift; sourceTree = "<group>"; };
 		840D54462AACFB6C00D4DF3E /* ReceiptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsViewController.swift; sourceTree = "<group>"; };
+		840D54482AAD238700D4DF3E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		840D544A2AAD24B600D4DF3E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		840D544C2AAD270B00D4DF3E /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Job.swift; path = PACReceipts/Extensions/Job.swift; sourceTree = SOURCE_ROOT; };
+		840D544E2AAD347E00D4DF3E /* OCRMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OCRMetaData.swift; path = PACReceipts/Views/OCRMetaData.swift; sourceTree = SOURCE_ROOT; };
+		840D54542AAD37D500D4DF3E /* ReceiptModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReceiptModel.xcdatamodel; sourceTree = "<group>"; };
+		840D54582AAD421800D4DF3E /* Receipt+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Receipt+CoreDataClass.swift"; sourceTree = "<group>"; };
+		840D54592AAD421800D4DF3E /* Receipt+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Receipt+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		840D545C2AAD44B000D4DF3E /* ReceiptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptStore.swift; sourceTree = "<group>"; };
+		840D545E2AAD541500D4DF3E /* UIImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTransformer.swift; sourceTree = "<group>"; };
+		840D54602AAD653C00D4DF3E /* MonthCellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCellDataModel.swift; sourceTree = "<group>"; };
 		842E95BC2AAC865A00A1C837 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		842E95BE2AAC96DC00A1C837 /* MonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
 		842E95C02AACCD4900A1C837 /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecognition.swift; path = PACReceipts/Views/Cell/TextRecognition.swift; sourceTree = SOURCE_ROOT; };
@@ -85,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8568C9B72F3514BDF96A3703 /* Pods_PACReceipts.framework in Frameworks */,
+				840D54492AAD238700D4DF3E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +197,13 @@
 		847D04282AAC3657004AC0FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				840D54582AAD421800D4DF3E /* Receipt+CoreDataClass.swift */,
+				840D54592AAD421800D4DF3E /* Receipt+CoreDataProperties.swift */,
+				840D54532AAD37D500D4DF3E /* ReceiptModel.xcdatamodeld */,
+				840D544E2AAD347E00D4DF3E /* OCRMetaData.swift */,
+				840D545C2AAD44B000D4DF3E /* ReceiptStore.swift */,
+				840D545E2AAD541500D4DF3E /* UIImageTransformer.swift */,
+				840D54602AAD653C00D4DF3E /* MonthCellDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +229,7 @@
 		E7F42D1F531E2FB8EBFC6A87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				840D54482AAD238700D4DF3E /* CoreData.framework */,
 				3122A5D7F55D71FCCE001E2F /* Pods_PACReceipts.framework */,
 			);
 			name = Frameworks;
@@ -214,6 +243,7 @@
 				F879B8572AAC68DB00992A57 /* NameViewController.swift */,
 				F879B8592AAC692A00992A57 /* StartupScreenController.swift */,
 				F879B85B2AAC695D00992A57 /* JobViewController.swift */,
+				840D544A2AAD24B600D4DF3E /* ProfileViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +253,7 @@
 			children = (
 				F879B85E2AAC6BBD00992A57 /* UserDefaults+Extensions.swift */,
 				84E1CB582AAC851700AD75D4 /* UIViewController + Extension.swift */,
+				840D544C2AAD270B00D4DF3E /* Job.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -404,17 +435,26 @@
 			files = (
 				842E95BD2AAC865A00A1C837 /* CategoryCell.swift in Sources */,
 				847D03FD2AAC3436004AC0FC /* MainViewController.swift in Sources */,
+				840D545F2AAD541500D4DF3E /* UIImageTransformer.swift in Sources */,
+				840D54552AAD37D500D4DF3E /* ReceiptModel.xcdatamodeld in Sources */,
 				F879B85C2AAC695D00992A57 /* JobViewController.swift in Sources */,
 				F879B85F2AAC6BBD00992A57 /* UserDefaults+Extensions.swift in Sources */,
 				847D03F92AAC3436004AC0FC /* AppDelegate.swift in Sources */,
 				84E1CB592AAC851700AD75D4 /* UIViewController + Extension.swift in Sources */,
+				840D544B2AAD24B600D4DF3E /* ProfileViewController.swift in Sources */,
 				847D03FB2AAC3436004AC0FC /* SceneDelegate.swift in Sources */,
 				840D54452AACEE4E00D4DF3E /* ImageUploadSuccessViewController.swift in Sources */,
 				F879B85A2AAC692A00992A57 /* StartupScreenController.swift in Sources */,
+				840D545B2AAD421800D4DF3E /* Receipt+CoreDataProperties.swift in Sources */,
 				F879B8562AAC5FC600992A57 /* OnboardingViewController.swift in Sources */,
 				840D54472AACFB6C00D4DF3E /* ReceiptsViewController.swift in Sources */,
+				840D545D2AAD44B000D4DF3E /* ReceiptStore.swift in Sources */,
 				842E95C32AACCF2000A1C837 /* MetaDataExtractor.swift in Sources */,
+				840D544F2AAD347E00D4DF3E /* OCRMetaData.swift in Sources */,
+				840D545A2AAD421800D4DF3E /* Receipt+CoreDataClass.swift in Sources */,
 				842E95BF2AAC96DC00A1C837 /* MonthCell.swift in Sources */,
+				840D54612AAD653C00D4DF3E /* MonthCellDataModel.swift in Sources */,
+				840D544D2AAD270B00D4DF3E /* Job.swift in Sources */,
 				842E95C12AACCD4900A1C837 /* TextRecognition.swift in Sources */,
 				F879B8582AAC68DB00992A57 /* NameViewController.swift in Sources */,
 			);
@@ -760,6 +800,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		840D54532AAD37D500D4DF3E /* ReceiptModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				840D54542AAD37D500D4DF3E /* ReceiptModel.xcdatamodel */,
+			);
+			currentVersion = 840D54542AAD37D500D4DF3E /* ReceiptModel.xcdatamodel */;
+			path = ReceiptModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 847D03ED2AAC3436004AC0FC /* Project object */;
 }

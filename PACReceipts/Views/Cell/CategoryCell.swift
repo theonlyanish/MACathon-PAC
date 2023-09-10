@@ -28,8 +28,8 @@ extension CategoryCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.adjustsFontForContentSizeCategory = true
         label.textAlignment = .center
-        label.font = UIFont.preferredFont(forTextStyle: .caption1)
-        contentView.layer.borderColor = UIColor.systemGray.cgColor
+        label.font = UIFont.preferredFont(forTextStyle: .subheadline)
+        contentView.layer.borderColor = UIColor.systemTeal.cgColor
         contentView.layer.borderWidth = 1
         contentView.layer.cornerRadius = 20
         contentView.addSubview(label)

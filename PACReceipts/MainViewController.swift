@@ -5,11 +5,11 @@ import VisionKit
 
 class MainViewController: UIViewController {
     enum SectionLayoutKind: Int, CaseIterable {
-        case categories, monthCell
+        case categories, monthSection
         
         var columnCount: Int {
             switch self {
-            case .monthCell:
+            case .monthSection:
                 return 1
             case .categories:
                 return 3
@@ -17,8 +17,9 @@ class MainViewController: UIViewController {
         }
     }
     
-    var categories: [Category]?
-    private var dataSource: UICollectionViewDiffableDataSource<SectionLayoutKind, Int>! = nil
+    var categories: [String] = Job.expenseCategories
+    var monthlyData: [MonthCellDataModel] = []
+    private var dataSource: UICollectionViewDiffableDataSource<SectionLayoutKind, AnyHashable>! = nil
     private var collectionView: UICollectionView! = nil
     let activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView(style: .large)
@@ -26,17 +27,54 @@ class MainViewController: UIViewController {
         indicator.translatesAutoresizingMaskIntoConstraints = false
         return indicator
     }()
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configViews()
         configureHierarchy()
         configureDataSource()
+        fetchData()
     }
     
     func configViews() {
+        navigationItem.largeTitleDisplayMode = .always
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(addButtonTapped))
+    }
+    
+    func fetchData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let store = appDelegate.receiptStore
+        store.fetchAllReceipts { data in
+            for item in data! {
+                // Unpack and process each item here
+                print("Name: \(item.name ?? "N/A")")
+                print("Category: \(item.category ?? "N/A")")
+                print("Total: \(item.total)")
+                print("isTaxDeductible: \(item.isTaxDeductible)")
+                print("image: \(item.image)")
+                print("date: \(item.date)")
+            }
+        }
+        
+        store.fetchReceiptsGroupedByMonth {
+            data in
+            if let dataGroups = data {
+                self.monthlyData = convertToMonthCellDataModel(receiptGroups: dataGroups)
+                print(self.monthlyData)
+            }
+            
+            var snapshot = NSDiffableDataSourceSnapshot<SectionLayoutKind, AnyHashable>()
+            snapshot.appendSections([.categories, .monthSection])
+            snapshot.appendItems(self.categories, toSection: .categories)
+            snapshot.appendItems(self.monthlyData, toSection: .monthSection)
+            print(self.monthlyData)
+            
+            DispatchQueue.main.async {
+                self.dataSource.apply(snapshot, animatingDifferences: false)
+            }
+            
+        }
     }
     
     @objc
@@ -88,7 +126,7 @@ extension MainViewController {
                 section.orthogonalScrollingBehavior = .continuous
                 section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
                 return section
-            case .monthCell:
+            case .monthSection:
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5))
                 let item = NSCollectionLayoutItem(layoutSize: itemSize)
                 item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 2, bottom: 8, trailing: 2)
@@ -110,38 +148,44 @@ extension MainViewController {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemBackground
-        view.addSubview(collectionView)
+        collectionView.dataSource = dataSource
         collectionView.delegate = self
+        view.addSubview(collectionView)
     }
     
     func configureDataSource() {
-        let listCellRegistration = UICollectionView.CellRegistration<CategoryCell, String> { (cell, indexPath, identifier) in
-            cell.label.text = "\(identifier)"
+        let categoryCellRegistration = UICollectionView.CellRegistration<CategoryCell, String> { (cell, indexPath, category) in
+            cell.label.text = "\(category)"
         }
         
-        let textCellRegistration = UICollectionView.CellRegistration<MonthCell, Int> { (cell, indexPath, identifier) in
-            cell.label.text = "\(identifier)"
+        let monthCellRegistration = UICollectionView.CellRegistration<MonthCell, MonthCellDataModel> { (cell, indexPath, data) in
+            cell.monthLabel.text = "\(data.month)"
+            cell.setCountText(data.receiptsCount)
         }
         
-        dataSource = UICollectionViewDiffableDataSource<SectionLayoutKind, Int>(collectionView: collectionView) {
-            (collectionView: UICollectionView, indexPath: IndexPath, identifier: Int) -> UICollectionViewCell? in
-            // Return the cell.
-            return SectionLayoutKind(rawValue: indexPath.section)! == .categories ?
-            collectionView.dequeueConfiguredReusableCell(using: listCellRegistration, for: indexPath, item: "Category" ) :
-            collectionView.dequeueConfiguredReusableCell(using: textCellRegistration, for: indexPath, item: identifier)
+        dataSource = UICollectionViewDiffableDataSource<SectionLayoutKind, AnyHashable>(collectionView: collectionView) {
+            (collectionView: UICollectionView, indexPath: IndexPath, item: AnyHashable) -> UICollectionViewCell? in
+            
+            if let category = item as? String {
+                return SectionLayoutKind(rawValue: indexPath.section)! == .categories ?
+                collectionView.dequeueConfiguredReusableCell(using: categoryCellRegistration, for: indexPath, item: category) : nil
+            } else if let month = item as? MonthCellDataModel {
+                return SectionLayoutKind(rawValue: indexPath.section)! == .monthSection ?
+                collectionView.dequeueConfiguredReusableCell(using: monthCellRegistration, for: indexPath, item: month) : nil
+            } else {
+                return nil
+            }
         }
         
         // Initial data
-        let itemsPerSection = 10
-        var snapshot = NSDiffableDataSourceSnapshot<SectionLayoutKind, Int>()
-        SectionLayoutKind.allCases.forEach {
-            snapshot.appendSections([$0])
-            let itemOffset = $0.rawValue * itemsPerSection
-            let itemUpperbound = itemOffset + itemsPerSection
-            snapshot.appendItems(Array(itemOffset..<itemUpperbound))
-        }
+        var snapshot = NSDiffableDataSourceSnapshot<SectionLayoutKind, AnyHashable>()
+        snapshot.appendSections([.categories, .monthSection])
+        snapshot.appendItems(categories, toSection: .categories)
+        snapshot.appendItems(self.monthlyData, toSection: .monthSection)
+        print(self.monthlyData)
         dataSource.apply(snapshot, animatingDifferences: false)
     }
+    
 }
 
 extension MainViewController: UICollectionViewDelegate {
@@ -198,6 +242,20 @@ extension MainViewController: VNDocumentCameraViewControllerDelegate {
 }
 
 
+func convertToMonthCellDataModel(receiptGroups: [String:[Receipt]]) -> [MonthCellDataModel] {
+    var monthData: [MonthCellDataModel] = []
+
+    // Create an array of tuples with (month: String, receiptsCount: Int)
+    let monthCountTuples = receiptGroups.map { (month: $0.key, receiptsCount: $0.value.count) }
+
+    // Sort the array of tuples in descending order based on receiptsCount
+    let sortedTuples = monthCountTuples.sorted { $0.receiptsCount > $1.receiptsCount }
+
+    // Convert the sorted tuples back to MonthCellDataModel
+    monthData = sortedTuples.map { MonthCellDataModel(month: $0.month, receiptsCount: $0.receiptsCount) }
+
+    return monthData
+}
 func requestCameraPermission(completion: @escaping (Bool) -> Void) {
     let status = AVCaptureDevice.authorizationStatus(for: .video)
     
