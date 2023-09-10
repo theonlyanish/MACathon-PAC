@@ -133,9 +133,13 @@ class ImageUploadSuccessViewController: UIViewController {
     
     // Handler for the "Done" button tap
     @objc func doneButtonTapped() {
-        // You can dismiss the view controller or perform any other action
-        navigationController?.dismiss(animated: true)
+        self.dismiss(animated: true) {
+            if let tabBarController = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController {
+                tabBarController.selectedIndex = 1 // switch to the second tab
+            }
+        }
     }
+
     
     func updateLabel() {
         DispatchQueue.main.async {
