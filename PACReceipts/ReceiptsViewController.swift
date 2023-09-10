@@ -83,9 +83,10 @@ extension ReceiptsViewController {
 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let receipt = receipts[indexPath.item]
-        let detailVC = ReceiptDetailViewController(receipt: receipt)
-        self.present(detailVC, animated: true, completion: nil)
+        let receiptDetailVC = ReceiptDetailViewController()
+        receiptDetailVC.receipt = receipts[indexPath.item]
+        present(receiptDetailVC, animated: true, completion: nil)
+        collectionView.deselectItem(at: indexPath, animated: true) // Deselect the cell after tap
     }
 
 

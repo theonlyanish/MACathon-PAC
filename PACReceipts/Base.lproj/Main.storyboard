@@ -157,6 +157,21 @@
             </objects>
             <point key="canvasLocation" x="950.38167938931292" y="2022.5352112676057"/>
         </scene>
+        <!--Receipt Detail View Controller-->
+        <scene sceneID="Z3T-Oj-fgg">
+            <objects>
+                <viewController id="cfK-Sj-thx" customClass="ReceiptDetailViewController" customModule="PACReceipts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VPs-mf-VhW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6cT-0h-OeN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4f-YC-xxn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="2655"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="Wgb-Tr-7fI">
             <objects>
